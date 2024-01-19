@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+body, html {
+  padding: 0;
+  margin: 0;
+  color-scheme: dark;
+  background: linear-gradient(180deg, #000 0.72%, #210727 24.29%, #300A39 42.63%, #41114E 105.51%);
+  font-family: "JetBrains Mono", monospace;
+  height: 150%;
+}
+
+#name-and-caption-wrapper {
+  margin: 2.5em;
+  background: linear-gradient(180deg, #CE8FFF 9.2%, #9811ff 57%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#name-and-caption-wrapper #title {
+  font-size: 4.5em;
+  font-weight: bold;
+}
+#name-and-caption-wrapper #caption {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+  border-bottom: 5px solid #360D56;
+  background: #200726;
+}
+nav li {
+  float: left;
+}
+nav li:first-child {
+  margin-left: 2em;
+}
+nav li:last-child {
+  float: right;
+  margin-right: 2em;
+}
+nav li a {
+  text-decoration: none;
+  display: block;
+  color: whitesmoke;
+  padding: 0.8em 1.5em;
+  color: #79549E;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+nav li a:hover {
+  background: rgba(255, 24, 197, 0.2);
+}
+
+/*# sourceMappingURL=style.css.map */

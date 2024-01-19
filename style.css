@@ -128,7 +128,7 @@ nav li a:hover {
 }
 @media only screen and (max-width: 660px) {
   nav ul li a {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   #techstack-wrapper {
     width: 95vw;
@@ -143,9 +143,10 @@ nav li a:hover {
     width: 80%;
   }
 }
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 550px) {
   nav ul li a {
-    font-size: 0.8em;
+    font-size: 1.1em;
+    padding: 0.6em 1em;
   }
   #techstack-wrapper {
     top: 99%;
@@ -157,9 +158,13 @@ nav li a:hover {
     width: 90%;
   }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 470px) {
+  nav ul li:first-child, nav ul li:last-child {
+    margin: 0;
+  }
   nav ul li a {
-    font-size: 0.7em;
+    font-size: 1em;
+    padding: 0.8em 0.6em;
   }
   #name-and-caption-wrapper #title {
     font-size: 1.8em;

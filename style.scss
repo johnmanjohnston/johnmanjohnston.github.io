@@ -161,7 +161,7 @@ nav {
 
 @media only screen and (max-width: 660px) {
     nav ul li a {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     #techstack-wrapper {
@@ -183,9 +183,10 @@ nav {
     }
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 550px) {
     nav ul li a {
-        font-size: .8em;
+        font-size: 1.1em;
+        padding: .6em 1em;
     }
 
     #techstack-wrapper {
@@ -203,9 +204,20 @@ nav {
     }
 }
 
-@media only screen and (max-width: 450px) {
-    nav ul li a {
-        font-size: .7em;
+@media only screen and (max-width: 470px) {
+    
+    nav ul {    
+        li {
+
+            &:first-child, &:last-child {
+                margin: 0;
+            }
+
+            a {
+                font-size: 1em;
+                padding: .8em .6em;
+            }
+        }
     }
 
     #name-and-caption-wrapper {

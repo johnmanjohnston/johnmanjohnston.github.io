@@ -14,20 +14,47 @@ body, html {
 #name-and-caption-wrapper {
     margin: 2.5em;
 
-    // from Figam's "developer mode" thing idk
-    background: linear-gradient(180deg, #CE8FFF 9.2%, #9811ff 57%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+    
     #title {
+        // from Figam's "developer mode" thing idk
+        background: linear-gradient(180deg, #CE8FFF 9.2%, #9811ff 57%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
         font-size: 4.5em;
         font-weight: bold;
     }
 
     #caption {
-        font-size: 1.5em;
+        // from Figam's "developer mode" thing idk
+        background: linear-gradient(180deg, #CE8FFF 9.2%, #9811ff 57%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        
+        font-size: 1.8em;
         font-weight: bold;
+    }
+
+    #desc {
+        width: 35%;
+        font-weight: bold;
+        font-size: 1.3em;
+        
+        background: whitesmoke;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        span {
+            background: #9911ff;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 400;
+        }
     }
 }   
 
@@ -58,10 +85,10 @@ nav {
             text-decoration: none;
             display: block;
             color: whitesmoke;
-            padding: .8em 1.5em; 
-
+            
             color: #79549E;
-            font-size: 1.2em;
+            font-size: 1.4em;
+            padding: .6em 1.3em; 
             font-weight: bold;
 
             &:hover {
@@ -70,3 +97,32 @@ nav {
         }
     }
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2b1f38;
+}
+
+#about {
+    position: relative;
+}
+
+#techstack-wrapper {
+    position: absolute;
+    top: 4em;
+    right: 2em;
+
+    img {
+        height: 8em;
+    }
+    
+    div {
+        text-align: center;
+        color: #764A6C;
+        font-style: italic;
+        font-weight: 500;
+    }
+}   

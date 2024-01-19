@@ -10,18 +10,38 @@ body, html {
 
 #name-and-caption-wrapper {
   margin: 2.5em;
+}
+#name-and-caption-wrapper #title {
   background: linear-gradient(180deg, #CE8FFF 9.2%, #9811ff 57%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-#name-and-caption-wrapper #title {
   font-size: 4.5em;
   font-weight: bold;
 }
 #name-and-caption-wrapper #caption {
-  font-size: 1.5em;
+  background: linear-gradient(180deg, #CE8FFF 9.2%, #9811ff 57%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8em;
   font-weight: bold;
+}
+#name-and-caption-wrapper #desc {
+  width: 35%;
+  font-weight: bold;
+  font-size: 1.3em;
+  background: whitesmoke;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#name-and-caption-wrapper #desc span {
+  background: #9911ff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
 }
 
 nav ul {
@@ -46,13 +66,40 @@ nav li a {
   text-decoration: none;
   display: block;
   color: whitesmoke;
-  padding: 0.8em 1.5em;
   color: #79549E;
-  font-size: 1.2em;
+  font-size: 1.4em;
+  padding: 0.6em 1.3em;
   font-weight: bold;
 }
 nav li a:hover {
   background: rgba(255, 24, 197, 0.2);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b1f38;
+}
+
+#about {
+  position: relative;
+}
+
+#techstack-wrapper {
+  position: absolute;
+  top: 4em;
+  right: 2em;
+}
+#techstack-wrapper img {
+  height: 8em;
+}
+#techstack-wrapper div {
+  text-align: center;
+  color: #764A6C;
+  font-style: italic;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

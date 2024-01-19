@@ -147,6 +147,16 @@ nav {
     #techstack-wrapper {
         width: 40em;
     }
+
+    #name-and-caption-wrapper {
+        #title {
+            font-size: 4em;
+        }
+
+        #desc {
+            width: 80%;
+        }
+    }
 }
 
 @media only screen and (max-width: 660px) {
@@ -155,6 +165,60 @@ nav {
     }
 
     #techstack-wrapper {
-        width: 90vw;
+        width: 95vw;
+
+        div {
+            transform: translateY(-1.9em);
+        }
+    }
+
+    #name-and-caption-wrapper {
+        #title {
+            font-size: 3em;
+        }
+
+        #desc {
+            width: 80%;
+        }
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    nav ul li a {
+        font-size: .8em;
+    }
+
+    #techstack-wrapper {
+        top: 99%;
+    }
+
+    #name-and-caption-wrapper {
+        #title {
+            font-size: 2.5em;
+        }
+
+        #desc {
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    nav ul li a {
+        font-size: .7em;
+    }
+
+    #name-and-caption-wrapper {
+        #title {
+            font-size: 1.8em;
+        }
+
+        #caption {
+            font-size: 1.5em;
+        }
+
+        #desc {
+            font-size: 1.2em;
+        }
     }
 }

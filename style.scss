@@ -141,6 +141,10 @@ nav {
             width: 100%;
         }
     }
+
+    #end-note {
+        transform: translateY(15rem);
+    }
 }
 
 @media only screen and (max-width: 835px) {
@@ -162,6 +166,10 @@ nav {
 @media only screen and (max-width: 660px) {
     nav ul li a {
         font-size: 1.2em;
+    }
+
+    #end-note {
+        transform: translateY(calc(13rem));
     }
 
     #techstack-wrapper {
@@ -187,6 +195,10 @@ nav {
     nav ul li a {
         font-size: 1.1em;
         padding: .6em 1em;
+    }
+
+    #end-note {
+        transform: translateY(calc(9rem));
     }
 
     #techstack-wrapper {

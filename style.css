@@ -102,4 +102,31 @@ nav li a:hover {
   font-weight: 500;
 }
 
+@media only screen and (max-width: 1660px) {
+  #techstack-wrapper {
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50em;
+  }
+  #techstack-wrapper img {
+    object-fit: contain;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 835px) {
+  #techstack-wrapper {
+    width: 40em;
+  }
+}
+@media only screen and (max-width: 660px) {
+  nav ul li a {
+    font-size: 1em;
+  }
+  #techstack-wrapper {
+    width: 90vw;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -7,8 +7,17 @@ body, html {
     background: linear-gradient(180deg, #000 0.72%, #210727 24.29%, #300A39 42.63%, #41114E 105.51%);
 
     font-family: "JetBrains Mono", monospace;
+    color: whitesmoke;
 
     height: 150%;
+}
+
+a {
+    color: rgb(147, 70, 248);
+
+    &:visited {
+        color: rgb(123, 45, 226);
+    }
 }
 
 #name-and-caption-wrapper {
@@ -86,13 +95,13 @@ nav {
             display: block;
             color: whitesmoke;
             
-            color: #79549E;
+            color: #7b47ac !important;
             font-size: 1.4em;
             padding: .6em 1.3em; 
             font-weight: bold;
 
             &:hover {
-                background: rgba(255, 24, 197, 0.2);
+                background: #360d5679;
             }
         }
     }
@@ -233,12 +242,14 @@ nav {
     }
 
     #name-and-caption-wrapper {
+        margin: 2em;
+
         #title {
-            font-size: 1.8em;
+            font-size: 2em;
         }
 
         #caption {
-            font-size: 1.5em;
+            font-size: 1.3em;
         }
 
         #desc {

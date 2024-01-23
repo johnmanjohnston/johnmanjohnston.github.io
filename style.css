@@ -5,7 +5,15 @@ body, html {
   color-scheme: dark;
   background: linear-gradient(180deg, #000 0.72%, #210727 24.29%, #300A39 42.63%, #41114E 105.51%);
   font-family: "JetBrains Mono", monospace;
+  color: whitesmoke;
   height: 150%;
+}
+
+a {
+  color: rgb(147, 70, 248);
+}
+a:visited {
+  color: rgb(123, 45, 226);
 }
 
 #name-and-caption-wrapper {
@@ -66,13 +74,13 @@ nav li a {
   text-decoration: none;
   display: block;
   color: whitesmoke;
-  color: #79549E;
+  color: #7b47ac !important;
   font-size: 1.4em;
   padding: 0.6em 1.3em;
   font-weight: bold;
 }
 nav li a:hover {
-  background: rgba(255, 24, 197, 0.2);
+  background: rgba(54, 13, 86, 0.4745098039);
 }
 
 ::-webkit-scrollbar {
@@ -175,11 +183,14 @@ nav li a:hover {
     font-size: 1em;
     padding: 0.8em 0.6em;
   }
+  #name-and-caption-wrapper {
+    margin: 2em;
+  }
   #name-and-caption-wrapper #title {
-    font-size: 1.8em;
+    font-size: 2em;
   }
   #name-and-caption-wrapper #caption {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   #name-and-caption-wrapper #desc {
     font-size: 1.2em;

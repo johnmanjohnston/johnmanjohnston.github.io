@@ -10,6 +10,16 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <style>
+        .para-text {
+            font-size: 1.8em;
+        }
+
+        .para-text span {
+            color: #9554FE;
+        }
+    </style>
+
 </head>
 <body>
     <!--add manually, doing it via JS has a tiny delay where you can see the rest of the page before the wallpaper shows up-->
@@ -27,13 +37,24 @@
     <nav>
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="/projects.html">Projects</a></li>
             <li><a href="/contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="about-desc">This is the about page.</section>
+    <section id="about-desc">
+        <div id="name-and-caption-wrapper">
+            <div id="title" style="text-align: center;">About Me</div>
+            <br>
+            <div style="width: 73%; height: 100vh; margin: 4em; margin: auto;">
+                <div class="para-text" style="text-align: center;">
+                    I’m Ethan John. I’m an ardent <span>full-stack developer</span>, and my expertise lies in the creation of <span>dynamic web-applications</span>. My ability to adapt to different technologies allows me to <span>swiftly tackle problems with <strong>efficiency</strong></span>. 
+                </div>
+            </div>
+        </div>
+
+    </section>
 
     <script src="./index.js"></script>
 

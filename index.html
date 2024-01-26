@@ -12,9 +12,21 @@
 
 </head>
 <body>
+    <!--add manually, doing it via JS has a tiny delay where you can see the rest of the page before the wallpaper shows up-->
+    <div class="wallpaper-intersection"></div>
+    <div class="wallpaper-intersection"></div>
+    <div class="wallpaper-intersection"></div>
+    <div class="wallpaper-intersection"></div>
+    <div class="wallpaper-intersection"></div>
+    <div class="wallpaper-intersection"></div>
+    <div class="wallpaper-intersection"></div>
+    <div class="wallpaper-intersection"></div>
+    <div class="wallpaper-intersection"></div>
+    <div class="wallpaper-intersection"></div>
+
     <nav>
         <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="/about.html">About</a></li>
             <li><a href="/projects.html">Projects</a></li>
             <li><a href="/contact.html">Contact</a></li>
@@ -43,24 +55,7 @@
     
     <div id="end-note" style="width: 80%; text-align: center; margin: auto; font-size: 1.3em;" data-aos="fade-up" data-aos-delay="500">If you would like to know more, you can have a look at my <a href="/projects.html">projects</a>, or read more <a href="#">about me</a>.</div>
 
-    <script>AOS.init();</script>
-
-    <script>
-        var numWallpaperIntersects = 10;
-        for (var i = 0; i < numWallpaperIntersects; i++) {
-            document.body.innerHTML += `<div class="wallpaper-intersection"></div>`;
-        }
-
-        var wallpaperIntersects = document.querySelectorAll(".wallpaper-intersection");
-
-
-        for (var i = 0; i < wallpaperIntersects.length; i++) {
-            wallpaperIntersects[i].setAttribute(
-                "style", `animation-name: fade-down; width: calc(100% / ${wallpaperIntersects.length}); left: calc((100% / ${wallpaperIntersects.length}) * ${i}); animation-delay: ${Math.floor((Math.floor(Math.random() * 100)))}ms;`
-            );
-        }
-
-    </script>
+    <script src="./index.js"></script>
 
 </body>
 </html>

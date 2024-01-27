@@ -12,11 +12,46 @@
 
     <style>
         .para-text {
-            font-size: 1.8em;
+            font-size: 1.6em;
         }
 
         .para-text span {
             color: #9554FE;
+        }
+
+        .about-page-title {
+            text-align: center;
+        }
+
+        #about-page-desc-container {
+            width: 73%; 
+            height: 100vh; 
+            margin: auto; 
+            text-align: center;
+        } 
+
+        @media only screen and (max-width: 835px) {
+            #about-page-desc-container {
+                width: 100%;
+                text-align: left;
+            } 
+
+            .about-page-title {
+                text-align: left;
+            }
+        }
+
+        @media only screen and (max-width: 660px) {
+            #about-page-desc-container {
+                width: 100%;
+                font-size: .9em;
+            }
+        }
+
+        @media only screen and (max-width: 470px) {
+            #about-page-desc-container .para-text {
+                font-size: 1.2em;
+            }
         }
     </style>
 
@@ -45,10 +80,10 @@
 
     <section id="about-desc">
         <div id="name-and-caption-wrapper">
-            <div id="title" style="text-align: center;">About Me</div>
+            <div id="title" class="about-page-title">About Me</div>
             <br>
-            <div style="width: 73%; height: 100vh; margin: 4em; margin: auto;">
-                <div class="para-text" style="text-align: center;">
+            <div id="about-page-desc-container">
+                <div class="para-text">
                     I’m Ethan John. I’m an ardent <span>full-stack developer</span>, and my expertise lies in the creation of <span>dynamic web-applications</span>. My ability to adapt to different technologies allows me to <span>swiftly tackle problems with <strong>efficiency</strong></span>. 
                 </div>
             </div>

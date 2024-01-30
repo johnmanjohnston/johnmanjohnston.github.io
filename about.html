@@ -112,9 +112,9 @@
 
     <section id="about-desc">
         <div id="name-and-caption-wrapper">
-            <div id="title" class="about-page-title">About Me</div>
+            <div id="title" class="about-page-title" data-aos="fade-up" data-aos-delay="100">About Me</div>
             <br>
-            <div id="about-page-desc-container">
+            <div id="about-page-desc-container" data-aos="fade-up" data-aos-delay="150">
                 <div class="para-text">
                     I’m Ethan John. I’m an ardent <span>full-stack developer</span>, and my expertise lies in the creation of <span>dynamic web-applications</span>. My ability to adapt to different technologies allows me to <span>swiftly tackle problems with <strong>efficiency</strong></span>. 
                 </div>
@@ -125,7 +125,7 @@
     </section>
 
     
-    <div style="text-align: center; color: #764A6C; font-style: italic; font-size: 1.1em;">I am well-versed and have good experience in the following technologies:</div> <br>
+    <div data-aos="fade-up" data-aos-delay="200" style="text-align: center; color: #764A6C; font-style: italic; font-size: 1.1em;">I am well-versed and have good experience in the following technologies:</div> <br>
     <div id="about-page-tech-icons-wrapper">
         <img src="./assets/logos/cs.png" />
         <img src="./assets/logos/cpp.png" />
@@ -144,7 +144,13 @@
     </div>
     
 
+    <script>
+        var logos = document.body.querySelectorAll("img");
+        for (var i = 0; i < logos.length; i++) {
+            logos[i].setAttribute("data-aos", `fade-up`);
+            logos[i].setAttribute("data-aos-delay", `${(i*50)}`)
+        }
+    </script>
     <script src="./index.js"></script>
-
 </body>
 </html>

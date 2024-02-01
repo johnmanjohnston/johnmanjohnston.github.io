@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan John - JohnmanJohnston</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+        .para-text {
+            font-size: 1.6em;
+        }
+
+        .para-text span {
+            color: #9554FE;
+        }
+
+        .about-page-title {
+            text-align: center;
+        }
+
+        #about-page-desc-container {
+            width: 73%; 
+            margin: auto; 
+            text-align: center;
+        } 
+
+        #about-page-tech-icons-wrapper {
+            width: 50%;
+            margin: auto;
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #about-page-tech-icons-wrapper img {
+            width:  6em;
+            height: 6em;
+            margin: .4em;
+        }
+
+        @media only screen and (max-width: 835px) {
+            #about-page-tech-icons-wrapper img {
+                width:  5.2em;
+                height: 5.2em;
+                margin: .3em;
+            }
+
+            #about-page-tech-icons-wrapper {
+                width: 90%;
+            }
+
+            #about-page-desc-container {
+                width: 100%;
+                text-align: left;
+            } 
+
+            .about-page-title {
+                text-align: left;
+            }
+        }
+
+        @media only screen and (max-width: 660px) {
+            #about-page-desc-container {
+                width: 100%;
+                font-size: .9em;
+            }
+
+            .about-page-title {
+                font-size: 3em !important;
+            }
+        }
+
+        @media only screen and (max-width: 470px) {
+            #about-page-desc-container .para-text {
+                font-size: 1.3em !important;
+            }
+
+            .about-page-title {
+                font-size: 3em !important;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <!--add manually, doing it via JS has a tiny delay where you can see the rest of the page before the wallpaper shows up-->
+    <div class="wallpaper-intersection"></div>
+    <div class="wallpaper-intersection"></div>
+    <div class="wallpaper-intersection"></div>
+    <div class="wallpaper-intersection"></div>
+    <div class="wallpaper-intersection"></div>
+    <div class="wallpaper-intersection"></div>
+    <div class="wallpaper-intersection"></div>
+    <div class="wallpaper-intersection"></div>
+    <div class="wallpaper-intersection"></div>
+    <div class="wallpaper-intersection"></div>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="about">
+        <div id="name-and-caption-wrapper">
+            <div id="title" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">My Projects</div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

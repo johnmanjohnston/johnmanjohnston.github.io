@@ -11,79 +11,42 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <style>
-        .para-text {
-            font-size: 1.6em;
-        }
+        .project-item-container {
+            width:  22em; 
+            height: 22em;
+            border-radius: 1em;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background: red;
 
-        .para-text span {
-            color: #9554FE;
-        }
-
-        .about-page-title {
             text-align: center;
         }
 
-        #about-page-desc-container {
-            width: 73%; 
-            margin: auto; 
-            text-align: center;
-        } 
+        .project-item-title {
+            font-size: 1.7em;
+            font-weight: bold;
+            margin-top: .5em;
+        }
 
-        #about-page-tech-icons-wrapper {
+        .project-item-desc {
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        .project-item-view {
+            font-size: 1.2em;
+            background: green;
             width: 50%;
-            margin: auto;
-            
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: .7em;
+            border-radius: 3px;
         }
 
-        #about-page-tech-icons-wrapper img {
-            width:  6em;
-            height: 6em;
-            margin: .4em;
-        }
-
-        @media only screen and (max-width: 835px) {
-            #about-page-tech-icons-wrapper img {
-                width:  5.2em;
-                height: 5.2em;
-                margin: .3em;
-            }
-
-            #about-page-tech-icons-wrapper {
-                width: 90%;
-            }
-
-            #about-page-desc-container {
-                width: 100%;
-                text-align: left;
-            } 
-
-            .about-page-title {
-                text-align: left;
-            }
-        }
-
-        @media only screen and (max-width: 660px) {
-            #about-page-desc-container {
-                width: 100%;
-                font-size: .9em;
-            }
-
-            .about-page-title {
-                font-size: 3em !important;
-            }
-        }
-
-        @media only screen and (max-width: 470px) {
-            #about-page-desc-container .para-text {
-                font-size: 1.3em !important;
-            }
-
-            .about-page-title {
-                font-size: 3em !important;
-            }
+        .project-item-image {
+            width: 100%;
+            height: 60%;
+            background: blue;
+            border-radius: 1em 1em 0 0;
         }
     </style>
 
@@ -113,6 +76,14 @@
     <div id="about">
         <div id="name-and-caption-wrapper">
             <div id="title" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">My Projects</div>
+        </div>
+
+        <div class="project-item-container">
+            <div class="project-item-image"></div>
+        
+            <div class="project-item-title">Project Title</div>
+            <div class="project-item-desc">project description</div>
+            <div class="project-item-view"><a href="https://github.com/johnmanjohnston/">View on GitHub</a></div>
         </div>
     </div>
 

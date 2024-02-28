@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+  </head>
+  <body>
+    <div>Enter code</div>
+    
+        <input id="code">
+        <button onclick="checkCode()">Enter Code</button>
+    
+	<script>
+        function checkCode() {
+            var codeNum = document.getElementById("code").value;
+            
+            if (codeNum == "42") {
+                alert("Correct! Find 'x', 2x^2 = 512")
+            } else {
+                alert("INCORRECT!")
+            }
+        }
+    </script>
+  </body>
+</html>

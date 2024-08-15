@@ -5,7 +5,7 @@ body {
 }
 
 .topbar nav {
-  background: linear-gradient(180deg, #222222 0%, #0A0A0A 100%);
+  background: linear-gradient(180deg, #222222 0%, #000000 100%);
 }
 .topbar nav ul li * {
   outline: none;

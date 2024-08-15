@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Jomhuria&family=Space+Grotesk:wght@300..700&display=swap');
+
+body { padding-top: 40px; font-family: "Space Grotesk" "JetBrains Mono", "Inter", "Helvetica", sans-serif; }
+
+.topbar nav {
+    background: linear-gradient(180deg, #353535 0%, #0A0A0A 100%);
+    
+    
+    ul {
+        li {
+            * {
+                outline: none;
+        
+                &:focus {
+                    outline: 1px solid white;
+                }
+                
+                &:focus:not(:focus-visible) {
+                    outline: none;
+                }
+
+                padding: 10px 2em;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.float-right { float: right; }

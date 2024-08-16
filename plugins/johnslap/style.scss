@@ -5,10 +5,10 @@ body, html {
     padding-top: 40px; 
     font-family: "Space Grotesk" "JetBrains Mono", "Inter", "Helvetica", 
     sans-serif; 
-    
+
     color-scheme: dark;
 
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(0, 0, 0);
 }
 
 h3 { font-family: "Roboto"; font-weight: 100; }
@@ -36,7 +36,18 @@ h3 { font-family: "Roboto"; font-weight: 100; }
     }
 }
 
-.float-right { float: right; }
+#js-bg {
+    position: absolute;
+    top: -40px;
+
+    opacity: 1;
+
+    margin: 0 auto;
+    width: fit-content;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 @media only screen and (max-width: 480px) {
     #view-source-li { display: none; } /* no one's viewing code on a screen that small */

@@ -1,16 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-body, html {
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
   padding-top: 40px;
+}
+
+body, html {
   font-family: "Space Grotesk" "JetBrains Mono", "Inter", "Helvetica", sans-serif;
   color-scheme: dark;
   overflow-x: hidden;
   background-color: rgb(0, 0, 0);
+  height: 100%;
 }
 
 h3 {
   font-family: "Roboto";
   font-weight: 100;
+}
+
+button {
+  font-family: "Space Grotesk", sans-serif;
+  padding: 0.24em 1.4em;
+  font-size: 2em;
+  font-weight: 500;
+  border-radius: 3px;
+  border: 1px solid #ABABAB;
+  color: #ABABAB;
+  background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, #272727 100%);
+  cursor: pointer;
+  margin-top: 1em;
+  filter: blur(0);
+  opacity: 0.7;
+  backdrop-filter: brightness(300%);
+  transition: 0.1s;
+}
+button:hover {
+  opacity: 1;
+  transition: 0.1s;
+}
+
+#title {
+  margin-top: 6em;
+  width: 30%;
+}
+
+#caption {
+  margin: auto;
+  width: 25%;
+  font-size: 2em;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  color: whitesmoke;
+  font-weight: lighter;
+  line-height: 1.2em;
 }
 
 .topbar nav {

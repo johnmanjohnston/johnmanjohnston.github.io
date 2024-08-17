@@ -2,21 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-body { padding-top: 40px; }
-
 body, html { 
     font-family: "Space Grotesk" "JetBrains Mono", "Inter", "Helvetica", sans-serif; 
 
     color-scheme: dark;
 
     overflow-x: hidden;
+    overflow-y: visible;
     background-color: rgb(0, 0, 0);
-
+    position:relative;
     height: 100%;
+
+    scroll-behavior: smooth;
 }
 
 h3 { font-family: "Roboto"; font-weight: 100; }
-button {
+#learn-more-btn {
     font-family: "Space Grotesk", sans-serif;
     padding: 0.24em 1.4em;
     font-size: 2em;
@@ -31,6 +32,7 @@ button {
     opacity: 0.7;
     
     backdrop-filter: brightness(300%);
+    text-decoration: none;
 
     transition: 0.1s; 
     &:hover { opacity: 1; transition: 0.1s; }
@@ -75,6 +77,19 @@ button {
     }
 }
 
+.section-title {
+    font-size: 8em;
+    font-family: "Space Grotesk", sans-serif;
+    text-align: center;
+}
+
+.section-content {
+    font-size: 1.6em;
+    margin-top: 3em;
+    font-family: "Space Grotesk";
+    line-height: 1.3em;
+}
+
 #js-bg {
     filter: blur(10px);
     opacity: .2;
@@ -117,6 +132,10 @@ button {
     #js-bg {
         transform: translateX(-70%);
     }
+
+    .section-container {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -129,7 +148,11 @@ button {
     
     #title { width: 80%; }
     #caption { font-size: 1.2em; }
-    button { font-size: 1.8em; }
+    #learn-more-btn { font-size: 1.8em; }
+
+    .section-container {
+        font-size: 0.8em;
+    }
 }
 
 @media only screen and (max-width: 350px) {
@@ -141,5 +164,9 @@ button {
         }
     }
 
-    button { font-size: 1.4em; }
+    #learn-more-btn { font-size: 1.4em; }
+
+    .section-container {
+        font-size: 0.7em;
+    }
 }

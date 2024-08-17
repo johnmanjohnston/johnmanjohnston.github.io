@@ -19,6 +19,25 @@ body, html {
 h3 { font-family: "Roboto"; font-weight: 100; }
 .span-title { font-family: "Roboto"; font-weight: 300; font-size: 1.2em; }
 
+.fpath {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.9em;
+}
+
+.download-links {
+    padding: 0.2em 1em;
+    border-radius: 4px;
+    border: 1px solid #ABABAB;
+    opacity: 0.8;
+    color: gray;
+
+    
+    &:hover {
+        text-decoration: none;
+        color: #DDD;
+        opacity: 1;
+    }
+}
 
 #learn-more-btn {
     font-family: "Space Grotesk", sans-serif;

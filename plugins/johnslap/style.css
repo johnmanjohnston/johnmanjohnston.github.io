@@ -17,6 +17,12 @@ h3 {
   font-weight: 100;
 }
 
+.span-title {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
 #learn-more-btn {
   font-family: "Space Grotesk", sans-serif;
   padding: 0.24em 1.4em;
@@ -53,6 +59,10 @@ h3 {
   color: whitesmoke;
   font-weight: lighter;
   line-height: 1.2em;
+}
+
+.section-gap {
+  margin-top: 50vh;
 }
 
 .topbar nav {

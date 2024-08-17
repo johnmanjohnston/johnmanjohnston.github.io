@@ -41,12 +41,12 @@ button:hover {
 
 #title {
   margin-top: 6em;
-  width: 30%;
+  width: 40em;
 }
 
 #caption {
   margin: auto;
-  width: 25%;
+  width: 18em;
   font-size: 2em;
   text-align: center;
   font-family: "Space Grotesk", sans-serif;
@@ -85,10 +85,13 @@ button:hover {
   -webkit-box-sizing: border-box;
 }
 
-@media only screen and (max-width: 480px) {
-  #view-source-li {
-    display: none;
-  } /* no one's viewing code on a screen that small */
+@media only screen and (max-width: 700px) {
+  #title {
+    font-size: 0.8em;
+  }
+  #caption {
+    font-size: 1.5em;
+  }
 }
 @media only screen and (max-width: 1400px) {
   #js-bg {
@@ -113,10 +116,22 @@ button:hover {
   #js-bg {
     transform: translateX(-80%);
   }
+  #title {
+    width: 80%;
+  }
+  #caption {
+    font-size: 1.2em;
+  }
+  button {
+    font-size: 1.8em;
+  }
 }
 @media only screen and (max-width: 350px) {
   ul li * {
     font-size: 0.8em;
+  }
+  button {
+    font-size: 1.4em;
   }
 }
 

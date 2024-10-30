@@ -2,6 +2,15 @@ document.body.onload = () => {
     var wallpaperIntersects = document.querySelectorAll(".wallpaper-intersection");
     console.log("configuring wallpaper intersects");
 
+    // a fix for when using the previous/next webpage buttons on Safari
+    // the fade-up animation plays and covers the entire webpage
+    window.addEventListener("pageshow", (e) => {
+        if (e.persisted) {
+            wallpaperIntersects = document.querySelectorAll(".wallpaper-intersection");
+            wallpaperIntersects.forEach(el => el.remove());
+        }   
+    });
+
     for (var i = 0; i < wallpaperIntersects.length; i++) {
         var delay = Math.floor((Math.floor(Math.random() * 100)));
 

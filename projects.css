@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.project-item-container {
+    width:  22em; 
+    height: 22em;
+    border-radius: calc(1em + 2px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    text-align: center;
+    border: 2px solid #360D56;
+    display: inline-block;
+    margin: .4em;
+}
+
+#projects-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item-title {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-top: .4em;
+}
+
+.project-item-desc {
+    font-size: 1.1em;
+    text-align: center;
+    letter-spacing: -1px;
+    margin-top: -0.1em;
+}
+
+.project-item-view {
+    font-size: 1.2em;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .2em;
+    border-radius: 3px;
+}
+
+.project-item-image {
+    width: 100%;
+    height: 60%;
+    background: blue;
+    border-radius: 1em 1em 0 0;
+}
+
+.project-item-techs {
+    font-style: italic;
+    letter-spacing: -1px;
+    opacity: .5;
+    margin-top: .2em;
+}
+
+#johnslap {
+    font-family: "Roboto Condensed";
+    font-style: italic;
+}
+
+#fluffyjohn {
+    font-family: "Krona One";
+    font-size: 1.4em;
+}

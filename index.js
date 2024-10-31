@@ -8,7 +8,7 @@ document.body.onload = () => {
         if (e.persisted) {
             wallpaperIntersects = document.querySelectorAll(".wallpaper-intersection");
             wallpaperIntersects.forEach(el => el.remove());
-        }   
+        }
     });
 
     for (var i = 0; i < wallpaperIntersects.length; i++) {
@@ -37,13 +37,13 @@ document.body.onload = () => {
 
             for (var i = 0; i < wallpaperIntersects.length; i++) {
                 var delay = Math.floor((Math.floor(Math.random() * 100)));
-                document.body.innerHTML += 
-                `
-                <div class="wallpaper-intersection" style="height: 0; animation-name: fade-up; width: calc(100% / ${wallpaperIntersects.length}); left: calc((100% / ${wallpaperIntersects.length}) * ${i}); animation-delay: ${delay}ms; animation-duration: .25s;"></div>
+                document.body.innerHTML +=
+                    `
+                <div class="wallpaper-intersection" style="height: 0; animation-name: fade-up; width: calc(100% / ${wallpaperIntersects.length}); left: calc((100% / ${wallpaperIntersects.length}) * ${i}); animation-delay: ${delay}ms; animation-duration: .25s; top: ${window.scrollY}px;"></div>
                 `
             }
 
-            setTimeout( () => {window.location.href = href;}, 400);
+            setTimeout(() => { window.location.href = href; }, 400);
 
             return false;
         }

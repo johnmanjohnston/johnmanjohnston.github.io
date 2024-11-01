@@ -29,23 +29,25 @@ document.body.onload = () => {
 
     var anchors = document.querySelectorAll("a");
     for (var i = 0; i < anchors.length; i++) {
-        anchors[i].onclick = (ev) => {
-            ev.preventDefault();
-            var href = ev.target.getAttribute("href");
+        if (anchors[i].getAttribute("target") != "_blank") {
+            anchors[i].onclick = (ev) => {
+                ev.preventDefault();
+                var href = ev.target.getAttribute("href");
 
-            if (href === "#") return false;
+                if (href === "#") return false;
 
-            for (var i = 0; i < wallpaperIntersects.length; i++) {
-                var delay = Math.floor((Math.floor(Math.random() * 100)));
-                document.body.innerHTML +=
+                for (var i = 0; i < wallpaperIntersects.length; i++) {
+                    var delay = Math.floor((Math.floor(Math.random() * 100)));
+                    document.body.innerHTML +=
+                        `
+                    <div class="wallpaper-intersection" style="height: 0; animation-name: fade-up; width: calc(100% / ${wallpaperIntersects.length}); left: calc((100% / ${wallpaperIntersects.length}) * ${i}); animation-delay: ${delay}ms; animation-duration: .25s; top: ${window.scrollY}px;"></div>
                     `
-                <div class="wallpaper-intersection" style="height: 0; animation-name: fade-up; width: calc(100% / ${wallpaperIntersects.length}); left: calc((100% / ${wallpaperIntersects.length}) * ${i}); animation-delay: ${delay}ms; animation-duration: .25s; top: ${window.scrollY}px;"></div>
-                `
+                }
+
+                setTimeout(() => { window.location.href = href; }, 400);
+
+                return false;
             }
-
-            setTimeout(() => { window.location.href = href; }, 400);
-
-            return false;
         }
     }
 }

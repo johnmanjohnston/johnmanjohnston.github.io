@@ -50,10 +50,9 @@
     background: blue;
     border-radius: 1em 1em 0 0;
 
-    background: url("./assets/projects/fluffyjohn.png");
-    background-size: cover;
+    background-size: cover !important;
+    background-position: center center !important;;
     background-repeat: no-repeat;
-    background-position: center center;
 }
 
 .project-item-techs {
@@ -77,8 +76,18 @@
     font-size: 1.2em;
 }
 
+@media only screen and (max-width: 550px) {
+    .project-item-view {
+        font-size: 0.97em;
+    }
+}
+
 @media only screen and (max-width: 450px) {
     .project-item-container {
         font-size: .8em;
+    }
+
+    .project-item-container {
+        font-size: .8m;
     }
 }

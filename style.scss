@@ -125,6 +125,7 @@ nav {
 
     img {
         height: 8em;
+        margin: .2em;
     }
     
     div {
@@ -141,24 +142,35 @@ nav {
         top: 130%;
         left: 50%;
         transform: translateX(-50%);
+        width: 100%;
 
-        width: 50em;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+      
+        div {
+          position: absolute;
+          margin-top: 9em;
+        }
+    }
 
-        img {
-            object-fit: contain;
-            width: 100%;
+    #name-and-caption-wrapper {
+        #desc { 
+           width: 100%;
         }
     }
 
     #end-note {
-        transform: translateY(15rem);
+        transform: translateY(18rem);
     }
 }
 
 @media only screen and (max-width: 835px) {
-    #techstack-wrapper {
-        width: 40em;
+  #techstack-wrapper {
+    img {
+      height: 6em;
     }
+  }
 
     #name-and-caption-wrapper {
         #title {
@@ -186,6 +198,10 @@ nav {
         div {
             transform: translateY(-1.9em);
         }
+
+        img {
+          height: 5em;
+        }
     }
 
     #name-and-caption-wrapper {
@@ -205,12 +221,11 @@ nav {
         padding: .6em 1em;
     }
 
-    #end-note {
-        transform: translateY(calc(9rem));
-    }
-
     #techstack-wrapper {
-        top: 99%;
+      margin-top: -5em;
+      img {
+        height: 4em;
+      }
     }
 
     #name-and-caption-wrapper {

@@ -61,3 +61,10 @@ createProjectCard({
     "link": `${GIT_PROFILE_URL}/jelodyne`,
     "techs": "C++, JUCE"
 });
+
+createProjectCard({
+    "title": "MelodyLounge",
+    "description": "Music playback service",
+    "link": `${GIT_PROFILE_URL}/melodylounge`,
+    "techs": "Python, Django, HTML, JS, CSS"
+})

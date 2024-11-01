@@ -49,6 +49,11 @@
     height: 60%;
     background: blue;
     border-radius: 1em 1em 0 0;
+
+    background: url("./assets/projects/fluffyjohn.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .project-item-techs {

@@ -170,6 +170,10 @@ nav {
     img {
       height: 6em;
     }
+
+    div {
+      margin-top: 7em;
+    }
   }
 
     #name-and-caption-wrapper {
@@ -196,7 +200,7 @@ nav {
         width: 95vw;
 
         div {
-            transform: translateY(-1.9em);
+          margin-top: 6em;
         }
 
         img {
@@ -225,6 +229,10 @@ nav {
       margin-top: -5em;
       img {
         height: 4em;
+      }
+
+      div {
+        margin-top: 5em;
       }
     }
 
@@ -269,6 +277,12 @@ nav {
         #desc {
             font-size: 1.2em;
         }
+    }
+
+    #techstack-wrapper {
+      img {
+        height: 3.3em;
+      }
     }
 }
 

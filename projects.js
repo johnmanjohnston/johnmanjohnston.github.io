@@ -3,13 +3,6 @@ const PROJECT_IMAGE_ROOT = "./assets/projects"
 var numCardsCreated = 0;
 
 function createProjectCard(data) {
-    /*
-        data structure:
-            title (ex "JohnSlap")
-            description (ex "slap bass plugin")
-            link (ex "https://github.com/johnmanjohnston/johnslap/")
-    */
-
     numCardsCreated++;
     var wrapper = document.querySelector("#projects-cards-wrapper");
 
@@ -61,17 +54,19 @@ createProjectCard({
 });
 
 createProjectCard({
-    "title": "Jelodyne <span style='font-size: 0.5em;'>(in progress)</span>",
-    "description": "Manual pitch-correction",
-    "link": `${GIT_PROFILE_URL}/jelodyne`,
-    "techs": "C++, JUCE",
-    "bgImage": `${PROJECT_IMAGE_ROOT}/jelodyne.png`
-});
-
-createProjectCard({
     "title": "MelodyLounge",
     "description": "Music playback web app",
     "link": `${GIT_PROFILE_URL}/melodylounge`,
     "techs": "Python, Django, HTML, JS, CSS",
-    "bgImage": `${PROJECT_IMAGE_ROOT}/melodylounge.png`
-})
+    "bgImage": `${PROJECT_IMAGE_ROOT}/melodylounge.png`,
+    "customTitleId": "melodylounge"
+});
+
+createProjectCard({
+    "title": "Jelodyne <span style='font-size: 0.5em;'>(in progress)</span>",
+    "description": "Manual pitch-correction",
+    "link": `${GIT_PROFILE_URL}/jelodyne`,
+    "techs": "C++, JUCE",
+    "bgImage": `${PROJECT_IMAGE_ROOT}/jelodyne.png`,
+    "customTitleId": "jelodyne"
+});

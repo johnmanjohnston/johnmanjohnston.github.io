@@ -24,7 +24,8 @@ a {
 
     #title {
         // from Figam's "developer mode" thing idk
-        background: linear-gradient(180deg, #CE8FFF 9.2%, #9811ff 57%);
+        background: linear-gradient(180deg, #be4fff 9.2%, #9b4fff 57%);
+        // background:#9b4fff;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -40,11 +41,10 @@ a {
 
     #caption {
         // from Figma's "developer mode" thing idk
-        background: linear-gradient(180deg, #CE8FFF 9.2%, #9811ff 57%);
+        background: linear-gradient(180deg, #CE8FFF 9.2%, #ac4cf5 57%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        
         
         font-size: 1.8em;
         font-weight: bold;
@@ -61,7 +61,7 @@ a {
         -webkit-text-fill-color: transparent;
 
         span {
-            background: #9911ff;
+            background: #9b4fff;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -189,6 +189,10 @@ nav {
             width: 80%;
         }
     }
+
+  #end-note {
+        transform: translateY(14rem);
+  }
 }
 
 @media only screen and (max-width: 660px) {
@@ -197,7 +201,7 @@ nav {
     }
 
     #end-note {
-        transform: translateY(calc(13rem));
+        transform: translateY(14rem);
     }
 
     #techstack-wrapper {
@@ -248,6 +252,10 @@ nav {
         #desc {
             width: 90%;
         }
+    }
+
+    #end-note {
+      transform: translateY(8rem);
     }
 }
 

@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0e0e0;
+  font-family: "Inter", Helvetica, sans-serif;
+  letter-spacing: -0.1em;
+}
+
+.title-font-style {
+  font-weight: 800;
+  font-style: italic;
+}
+
+#nav-container nav {
+  background: linear-gradient(0deg, rgb(202, 202, 202) 0%, rgb(214, 214, 214) 43%, rgb(255, 255, 255) 100%);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav-container nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 80%;
+}
+#nav-container nav ul li {
+  float: right;
+}
+#nav-container nav ul li a, #nav-container nav ul li a:link, #nav-container nav ul li a:visited {
+  display: block;
+  text-align: center;
+  font-size: 2em;
+  padding: 0.24em 1em;
+  text-decoration: none;
+  color: #434343;
+}
+#nav-container nav ul li a:hover, #nav-container nav ul li a:link:hover, #nav-container nav ul li a:visited:hover {
+  color: rgb(147, 147, 147);
+}
+#nav-container nav ul li:first-child {
+  float: left;
+}
+#nav-container nav ul li:first-child a, #nav-container nav ul li:first-child a:link, #nav-container nav ul li:first-child a:visited {
+  color: transparent;
+  background: linear-gradient(0deg, rgb(40, 40, 40) 0%, rgb(64, 64, 64) 30%, rgb(130, 130, 130) 44%, rgb(64, 64, 64) 60%, rgb(62, 62, 62) 100%);
+  background-clip: text;
+  display: inline-block;
+}
+#nav-container nav ul li:first-child a:hover, #nav-container nav ul li:first-child a:link:hover, #nav-container nav ul li:first-child a:visited:hover {
+  opacity: 0.6;
+}
+#nav-container nav ul li:not(:first-child) {
+  font-weight: 200;
+  transform: scale(0.9);
+}
+
+/*# sourceMappingURL=style.css.map */

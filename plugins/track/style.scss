@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html, body { margin: 0; padding: 0; background-color: #e0e0e0; font-family: "Inter", Helvetica, sans-serif; letter-spacing: -0.1em;}
+
+.title-font-style { font-weight: 800; font-style: italic; }
+
+#nav-container {
+    nav {
+       background: linear-gradient(0deg,rgb(202, 202, 202) 0%, rgba(214, 214, 214, 1) 43%, rgb(255, 255, 255) 100%); 
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 10px;
+
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ul { 
+            list-style-type: none; 
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+
+            width: 80%;
+
+            li {
+                float: right;
+
+                a, a:link, a:visited {
+                    display: block;
+                    text-align: center;
+                    font-size: 2em;
+                    padding: .24em 1em;
+                    text-decoration: none;
+
+                    &:hover {
+                        // background: red;
+                        color: rgb(147, 147, 147);
+                    }
+
+
+                    color: #434343;
+                }
+
+                &:first-child {
+                    float: left;
+
+                    a, a:link, a:visited {
+                        color: transparent;
+
+                        background: linear-gradient(0deg, rgb(40, 40, 40) 0%, rgb(64, 64, 64) 30%, rgb(130, 130, 130) 44%, rgb(64, 64, 64) 60%, rgb(62, 62, 62) 100%);
+                        background-clip: text;
+                        display: inline-block;
+                        
+                        &:hover { opacity: 0.6; }
+                    }
+                }
+
+                &:not(:first-child) {
+                    font-weight: 200;
+                    transform: scale(0.9); // there's probably a better way to make these smaller but i could not be bothered
+                }
+            }
+        }
+    }
+}

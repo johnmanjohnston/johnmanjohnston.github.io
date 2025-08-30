@@ -101,6 +101,44 @@ html, body {
 .card .info-wrapper .info-text .info-stress {
   font-weight: 500;
 }
+.card #features-heading {
+  font-size: 2.2em;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(114, 114, 114);
+  margin: 0.2em;
+}
+.card #features-disclaimer {
+  font-size: 1em;
+  text-align: center;
+  margin: auto;
+  color: grey;
+  width: 40em;
+  letter-spacing: -0.05em;
+}
+.card #features-blocks-wrapper {
+  width: 100%;
+  height: 10em;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card #features-blocks-wrapper .feature-block {
+  margin: 0.5em;
+  width: 33%;
+  height: 100%;
+  display: inline-block;
+  letter-spacing: -0.05em;
+}
+.card #features-blocks-wrapper .feature-block .feature-ul-wrapper {
+  margin: auto;
+  width: 100%;
+}
+.card #features-blocks-wrapper .feature-block .feature-block-title {
+  text-align: center;
+  font-size: 1.2em;
+}
 
 @media only screen and (max-width: 1700px) {
   #nav-container nav ul {
@@ -109,8 +147,20 @@ html, body {
   .card {
     width: calc(80% - 60px);
   }
+  .card #features-disclaimer {
+    font-size: 0.8em;
+  }
+  #features-blocks-wrapper {
+    font-size: 0.8em;
+  }
 }
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 920px) {
+  #features-blocks-wrapper {
+    font-size: 0.74em;
+    padding: 0 0 1em 0;
+  }
+}
+@media only screen and (max-width: 750px) {
   body, html {
     font-size: 0.9em;
   }
@@ -123,6 +173,10 @@ html, body {
   .card .info-wrapper {
     width: 80%;
   }
+  .card #features-disclaimer {
+    font-size: 0.8em;
+    width: 90%;
+  }
 }
 @media only screen and (max-width: 590px) {
   body, html {
@@ -134,6 +188,10 @@ html, body {
   .card {
     width: calc(100% - 40px);
   }
+  #features-blocks-wrapper {
+    font-size: 0.8em;
+    padding: 0 0 2em 0;
+  }
 }
 @media only screen and (max-width: 420px) {
   body, html {
@@ -142,8 +200,12 @@ html, body {
   #nav-container nav ul li a, #nav-container nav ul li a:active, #nav-container nav ul li a:visited {
     padding: 0 0 0 0;
   }
+  #features-blocks-wrapper {
+    font-size: 0.8em;
+    padding: 0 0 7em 0;
+  }
 }
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 360px) {
   body, html {
     font-size: 0.5em;
   }

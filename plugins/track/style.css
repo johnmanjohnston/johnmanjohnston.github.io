@@ -24,7 +24,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  width: 80%;
+  width: 60%;
 }
 #nav-container nav ul li {
   float: right;
@@ -43,11 +43,8 @@ html, body {
 #nav-container nav ul li:first-child {
   float: left;
 }
-#nav-container nav ul li:first-child a, #nav-container nav ul li:first-child a:link, #nav-container nav ul li:first-child a:visited {
-  color: transparent;
-  background: linear-gradient(0deg, rgb(40, 40, 40) 0%, rgb(64, 64, 64) 30%, rgb(130, 130, 130) 44%, rgb(64, 64, 64) 60%, rgb(62, 62, 62) 100%);
-  background-clip: text;
-  display: inline-block;
+#nav-container nav ul li:first-child img {
+  height: 0.8em;
 }
 #nav-container nav ul li:first-child a:hover, #nav-container nav ul li:first-child a:link:hover, #nav-container nav ul li:first-child a:visited:hover {
   opacity: 0.6;
@@ -55,6 +52,78 @@ html, body {
 #nav-container nav ul li:not(:first-child) {
   font-weight: 200;
   transform: scale(0.9);
+}
+
+.card {
+  width: calc(60% - 60px);
+  height: 40em;
+  margin: auto;
+  background-color: #ebebeb;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px inset;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+  position: relative;
+}
+.card #banner-wrapper {
+  width: 103%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -2%);
+}
+.card #banner-wrapper #banner {
+  width: 100%;
+}
+.card #banner-wrapper #caption {
+  font-weight: 120;
+  font-size: 2em;
+  text-align: center;
+  color: white;
+  transform: translateY(-230%);
+}
+
+@media only screen and (max-width: 1700px) {
+  #nav-container nav ul {
+    width: 80%;
+  }
+  .card {
+    width: calc(80% - 60px);
+  }
+}
+@media only screen and (max-width: 710px) {
+  body, html {
+    font-size: 0.9em;
+  }
+  #nav-container nav ul {
+    width: 90%;
+  }
+  .card {
+    width: calc(90% - 60px);
+  }
+}
+@media only screen and (max-width: 590px) {
+  body, html {
+    font-size: 0.8em;
+  }
+  #nav-container nav ul {
+    width: 100%;
+  }
+  .card {
+    width: calc(100% - 40px);
+  }
+}
+@media only screen and (max-width: 420px) {
+  body, html {
+    font-size: 0.7em;
+  }
+  #nav-container nav ul li a, #nav-container nav ul li a:active, #nav-container nav ul li a:visited {
+    padding: 0 0 0 0;
+  }
+}
+@media only screen and (max-width: 330px) {
+  body, html {
+    font-size: 0.5em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

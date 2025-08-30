@@ -68,8 +68,8 @@ html, body { margin: 0; padding: 0; background-color: #e0e0e0; font-family: "Int
     margin: auto;
     background-color: #ebebeb;
 
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px inset;
-    border: 1px solid #bdbdbd;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px inset;
+    border: 1px solid #d1d1d1;
     border-radius: 3px;
 
     position: relative;
@@ -213,11 +213,30 @@ html, body { margin: 0; padding: 0; background-color: #e0e0e0; font-family: "Int
     }
 }
 
+footer {
+    width: calc(60% - 60px);
+    margin: auto;
+
+    color: grey;
+    letter-spacing: -0.05em;
+
+    #footer-jmjn {
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .footer-text {
+        color: grey;
+        font-size: 0.8em;
+        a { color: grey; }
+    }
+
+}
 
 @media only screen and (max-width: 1700px) {
     #nav-container nav ul { width: 80%; }
 
-    .card {
+    .card, footer {
         width: calc(80% - 60px);
 
         #features-disclaimer {
@@ -267,7 +286,7 @@ html, body { margin: 0; padding: 0; background-color: #e0e0e0; font-family: "Int
         }
     }
 
-    .card {
+    .card, footer {
         width: calc(90% - 60px);
 
         .info-wrapper {
@@ -286,7 +305,7 @@ html, body { margin: 0; padding: 0; background-color: #e0e0e0; font-family: "Int
     body, html { font-size: 0.8em; }
 
     #nav-container nav ul { width: 100%; }
-    .card {
+    .card, footer {
         width: calc(100% - 40px);
     }
 

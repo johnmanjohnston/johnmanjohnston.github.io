@@ -10,11 +10,11 @@
     <div id="nav-container">
         <nav>
             <ul>
-                <li class="title-font-style nav-track"><a href="#"><img src="track.png" alt="track logo"></a></li>
+                <li class="title-font-style nav-track"><a href=""><img src="track.png" alt="track logo"></a></li>
                 <div style="float: right;">
-                    <li class="nav-right"><a href="#">About</a></li>
+                    <li class="nav-right"><a href="#about">About</a></li>
                     <li class="nav-right"><a href="#features">Features</a></li>
-                    <li class="nav-right"><a href="#">Install</a></li>
+                    <li class="nav-right"><a href="#install">Install</a></li>
                 </div>
             </ul>
         </nav>
@@ -22,7 +22,7 @@
 
     <br>
 
-    <div class="card">
+    <div class="card" id="about">
         <div id="banner-wrapper">
             <img id="banner" src="temp-banner.png" alt="screenshot of track">
             <div id="caption">break that 8 track limit in your DAW.</div>
@@ -51,7 +51,7 @@
 
     <div class="card" id="features">
         <br>
-        <div id="features-heading">Features</div>
+        <div class="card-heading">Features</div>
         <div id="features-disclaimer">features that already exist, will come up, and ones that i don't intend on implementing. i lay out the features like this to be as transparent as possible to the probably only 2 users of track.</div>
         <br>
 
@@ -91,5 +91,45 @@
 
         <div style="letter-spacing: -0.05em; color: grey; font-style: italic; padding: .8em 1.5em;">*probably</div>
     </div>
+
+    <br>
+
+    <div class="card" id="install">
+        <br>
+        <div class="card-heading">Install</div>
+        <br>
+
+        <div id="platforms-blocks-wrapper">
+            <div class="platform-block">
+                <img src="linux-logo.png" alt="linux logo">
+                <div class="platform-name">Linux</div>
+                <div class="platform-arch">x86_64</div>
+                <div class="platform-note">compiled on Arch Linux</div>
+                <br>
+                <a href="#"><img src="install.png" alt="install button"></a>
+            </div>
+            <div class="platform-block">
+                <img src="windows-logo.png" alt="windows logo">
+                <div class="platform-name">Windows</div>
+                <div class="platform-arch">64-bit</div>
+                <div class="platform-note">&nbsp;</div>
+                <br>
+                <a href="#"><img src="install.png" alt="install button"></a>
+            </div>
+            <div class="platform-block">
+                <img src="macos-logo.png" alt="macOS logo">
+                <div class="platform-name">macOS</div>
+                <div class="platform-arch">coming soon</div>
+                <div class="platform-note">&nbsp;</div>
+                <br>
+                <a href="#" style="opacity: 0.2;"><img src="install.png" alt="install button"></a>
+            </div>
+        </div>
+
+        <div id="platform-unlisted-note">if your platform isn't listed, <strong>you can clone the git repo and build it yourself <a href="https://github.com/johnmanjohnston/track/">here</a></strong></div>
+    </div>
+
+    <br>
+    <br>
 </body>
 </html>

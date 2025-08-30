@@ -83,7 +83,7 @@ html, body {
   letter-spacing: -1px;
 }
 .card .info-wrapper {
-  width: 50%;
+  width: 60%;
   text-align: center;
   margin: 60% auto 0 auto;
   font-size: 1.6em;
@@ -101,7 +101,7 @@ html, body {
 .card .info-wrapper .info-text .info-stress {
   font-weight: 500;
 }
-.card #features-heading {
+.card .card-heading {
   font-size: 2.2em;
   text-align: center;
   font-weight: bold;
@@ -116,7 +116,7 @@ html, body {
   width: 40em;
   letter-spacing: -0.05em;
 }
-.card #features-blocks-wrapper {
+.card #features-blocks-wrapper, .card #platforms-blocks-wrapper {
   width: 100%;
   height: 10em;
   margin: auto;
@@ -124,20 +124,54 @@ html, body {
   align-items: center;
   justify-content: center;
 }
-.card #features-blocks-wrapper .feature-block {
+.card #features-blocks-wrapper .feature-block, .card #features-blocks-wrapper .platform-block, .card #platforms-blocks-wrapper .feature-block, .card #platforms-blocks-wrapper .platform-block {
   margin: 0.5em;
   width: 33%;
   height: 100%;
   display: inline-block;
   letter-spacing: -0.05em;
 }
-.card #features-blocks-wrapper .feature-block .feature-ul-wrapper {
+.card #features-blocks-wrapper .feature-block .feature-ul-wrapper, .card #features-blocks-wrapper .platform-block .feature-ul-wrapper, .card #platforms-blocks-wrapper .feature-block .feature-ul-wrapper, .card #platforms-blocks-wrapper .platform-block .feature-ul-wrapper {
   margin: auto;
   width: 100%;
 }
-.card #features-blocks-wrapper .feature-block .feature-block-title {
+.card #features-blocks-wrapper .feature-block .feature-block-title, .card #features-blocks-wrapper .platform-block .feature-block-title, .card #platforms-blocks-wrapper .feature-block .feature-block-title, .card #platforms-blocks-wrapper .platform-block .feature-block-title {
   text-align: center;
   font-size: 1.2em;
+}
+.card #platforms-blocks-wrapper {
+  height: 21em;
+  width: 70%;
+}
+.card #platforms-blocks-wrapper .platform-block {
+  text-align: center;
+}
+.card #platforms-blocks-wrapper .platform-block img {
+  height: 10em;
+}
+.card #platforms-blocks-wrapper .platform-block .platform-name {
+  font-size: 2em;
+  margin-bottom: 0.2em;
+}
+.card #platforms-blocks-wrapper .platform-block .platform-arch, .card #platforms-blocks-wrapper .platform-block .platform-note {
+  color: grey;
+  white-space: nowrap;
+}
+.card #platforms-blocks-wrapper .platform-block a {
+  font-size: 0.3em;
+  outline: none;
+  border: none;
+}
+.card #platforms-blocks-wrapper .platform-block a:hover {
+  opacity: 0.8;
+}
+.card #platforms-blocks-wrapper .platform-block a img {
+  height: 10%;
+}
+.card #platform-unlisted-note {
+  text-align: center;
+  letter-spacing: -0.05em;
+  margin: 1em;
 }
 
 @media only screen and (max-width: 1700px) {
@@ -150,6 +184,12 @@ html, body {
   .card #features-disclaimer {
     font-size: 0.8em;
   }
+  .card .info-wrapper {
+    width: 90%;
+  }
+  .card #platforms-blocks-wrapper {
+    width: 90%;
+  }
   #features-blocks-wrapper {
     font-size: 0.8em;
   }
@@ -158,6 +198,12 @@ html, body {
   #features-blocks-wrapper {
     font-size: 0.74em;
     padding: 0 0 1em 0;
+  }
+  .card #platforms-blocks-wrapper .platform-block a {
+    font-size: 0.25em;
+  }
+  .card #platforms-blocks-wrapper .platform-block img {
+    height: 7.5em;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -208,6 +254,10 @@ html, body {
 @media only screen and (max-width: 360px) {
   body, html {
     font-size: 0.5em;
+  }
+  #features-blocks-wrapper {
+    font-size: 0.8em;
+    padding: 0 0 14em 0;
   }
 }
 

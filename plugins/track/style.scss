@@ -22,8 +22,8 @@ html, body { margin: 0; padding: 0; background-color: #e0e0e0; font-family: "Int
             width: 60%;
 
             li {
-                float: right;
-
+                display: inline-block;
+                
                 a, a:link, a:visited {
                     display: block;
                     text-align: center;
@@ -39,30 +39,32 @@ html, body { margin: 0; padding: 0; background-color: #e0e0e0; font-family: "Int
                     color: #434343;
                 }
 
-                &:first-child {
-                    float: left;
-
-                    img {
-                        height: .8em;
-                    }
-
-                    a, a:link, a:visited {
-                        &:hover { opacity: 0.6; }
-                    }
-                }
-
-                &:not(:first-child) {
-                    font-weight: 200;
-                    transform: scale(0.9); // there's probably a better way to make these smaller but i could not be bothered
-                }
             }
+        }
+
+        .nav-track {
+            float: left;
+
+            img {
+                height: .8em;
+            }
+
+            a, a:link, a:visited {
+                &:hover { opacity: 0.6; }
+            }
+        }
+
+        .nav-right {
+            font-weight: 200;
+            transform: scale(0.9); // there's probably a better way to make these smaller but i could not be bothered
         }
     }
 }
 
 .card {
     width: calc(60% - 60px);
-    height: 40em;
+    //height: 70;
+    height: 70%; 
     margin: auto;
     background-color: #ebebeb;
 
@@ -88,7 +90,33 @@ html, body { margin: 0; padding: 0; background-color: #e0e0e0; font-family: "Int
             font-size: 2em;
             text-align: center;
             color: white;
-            transform: translateY(-230%);
+            transform: translateY(-250%);
+            letter-spacing: -1px;
+        }
+    }
+
+    .info-wrapper {
+        width: 50%;
+        // background-color: red;
+        text-align: center;
+        margin: 60% auto 0 auto;
+        font-size: 1.6em;
+
+        .info-heading {
+            font-weight: bold;
+            color: rgb(114, 114, 114);
+        }
+
+        .info-text {
+            color: rgb(43, 43, 43);
+
+            font-size: .8em;
+            letter-spacing: -0.07em;
+            font-weight: 300;
+
+            .info-stress {
+                font-weight: 500;
+            }
         }
     }
 }
@@ -115,6 +143,10 @@ html, body { margin: 0; padding: 0; background-color: #e0e0e0; font-family: "Int
 
     .card {
         width: calc(90% - 60px);
+
+        .info-wrapper {
+            width: 80%;
+        }
     }
 }
 

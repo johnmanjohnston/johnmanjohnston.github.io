@@ -27,7 +27,7 @@ html, body {
   width: 60%;
 }
 #nav-container nav ul li {
-  float: right;
+  display: inline-block;
 }
 #nav-container nav ul li a, #nav-container nav ul li a:link, #nav-container nav ul li a:visited {
   display: block;
@@ -40,23 +40,23 @@ html, body {
 #nav-container nav ul li a:hover, #nav-container nav ul li a:link:hover, #nav-container nav ul li a:visited:hover {
   color: rgb(147, 147, 147);
 }
-#nav-container nav ul li:first-child {
+#nav-container nav .nav-track {
   float: left;
 }
-#nav-container nav ul li:first-child img {
+#nav-container nav .nav-track img {
   height: 0.8em;
 }
-#nav-container nav ul li:first-child a:hover, #nav-container nav ul li:first-child a:link:hover, #nav-container nav ul li:first-child a:visited:hover {
+#nav-container nav .nav-track a:hover, #nav-container nav .nav-track a:link:hover, #nav-container nav .nav-track a:visited:hover {
   opacity: 0.6;
 }
-#nav-container nav ul li:not(:first-child) {
+#nav-container nav .nav-right {
   font-weight: 200;
   transform: scale(0.9);
 }
 
 .card {
   width: calc(60% - 60px);
-  height: 40em;
+  height: 70%;
   margin: auto;
   background-color: #ebebeb;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px inset;
@@ -79,7 +79,27 @@ html, body {
   font-size: 2em;
   text-align: center;
   color: white;
-  transform: translateY(-230%);
+  transform: translateY(-250%);
+  letter-spacing: -1px;
+}
+.card .info-wrapper {
+  width: 50%;
+  text-align: center;
+  margin: 60% auto 0 auto;
+  font-size: 1.6em;
+}
+.card .info-wrapper .info-heading {
+  font-weight: bold;
+  color: rgb(114, 114, 114);
+}
+.card .info-wrapper .info-text {
+  color: rgb(43, 43, 43);
+  font-size: 0.8em;
+  letter-spacing: -0.07em;
+  font-weight: 300;
+}
+.card .info-wrapper .info-text .info-stress {
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 1700px) {
@@ -99,6 +119,9 @@ html, body {
   }
   .card {
     width: calc(90% - 60px);
+  }
+  .card .info-wrapper {
+    width: 80%;
   }
 }
 @media only screen and (max-width: 590px) {

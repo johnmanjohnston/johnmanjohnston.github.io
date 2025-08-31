@@ -4,7 +4,9 @@ html, body {
   padding: 0;
   background-color: #e0e0e0;
   font-family: "Inter", Helvetica, sans-serif;
-  letter-spacing: -0.1em;
+  letter-spacing: -0.05em;
+  background: #EBEBEB;
+  background: linear-gradient(0deg, rgb(235, 235, 235) 0%, rgb(179, 179, 179) 70%, rgb(235, 235, 235) 100%);
 }
 
 .title-font-style {
@@ -59,6 +61,7 @@ html, body {
   height: 70%;
   margin: auto;
   background-color: #ebebeb;
+  background: linear-gradient(0deg, rgb(227, 227, 227) 0%, rgb(225, 225, 225) 28%, rgb(255, 255, 255) 50%, rgb(219, 219, 219) 78%, rgb(232, 232, 232) 100%);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px inset;
   border: 1px solid #d1d1d1;
   border-radius: 3px;
@@ -90,7 +93,11 @@ html, body {
 }
 .card .info-wrapper .info-heading {
   font-weight: bold;
-  color: rgb(114, 114, 114);
+  background: #636363;
+  background: linear-gradient(to top, #636363 25%, #989898 50%, #7C7C7C 76%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .card .info-wrapper .info-text {
   color: rgb(43, 43, 43);
@@ -107,6 +114,11 @@ html, body {
   font-weight: bold;
   color: rgb(114, 114, 114);
   margin: 0.2em;
+  background: #636363;
+  background: linear-gradient(to top, #515151 25%, #989898 50%, #7C7C7C 76%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .card #features-disclaimer {
   font-size: 1em;

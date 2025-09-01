@@ -51,6 +51,10 @@ html, body {
 #nav-container nav .nav-track a:hover, #nav-container nav .nav-track a:link:hover, #nav-container nav .nav-track a:visited:hover {
   opacity: 0.6;
 }
+#nav-container nav .nav-track a:focus, #nav-container nav .nav-track a:link:focus, #nav-container nav .nav-track a:visited:focus {
+  outline: 2px solid black;
+  outline-offset: -3px;
+}
 #nav-container nav .nav-right {
   font-weight: 200;
   transform: scale(0.9);
@@ -176,6 +180,9 @@ html, body {
 }
 .card #platforms-blocks-wrapper .platform-block a:hover {
   opacity: 0.8;
+}
+.card #platforms-blocks-wrapper .platform-block a:focus {
+  outline: 2px solid black;
 }
 .card #platforms-blocks-wrapper .platform-block a img {
   height: 11%;

@@ -60,6 +60,7 @@ html, body {
 
             a, a:link, a:visited {
                 &:hover { opacity: 0.6; }
+                &:focus { outline: 2px solid black; outline-offset: -3px;}
             }
         }
 
@@ -220,6 +221,10 @@ html, body {
                 border: none;
                 &:hover {
                     opacity: 0.8;
+                }
+
+                &:focus {
+                    outline: 2px solid black;
                 }
 
                 img {

@@ -148,7 +148,7 @@ html, body {
         width: 100%;
         height: 5em;
 
-        margin-bottom: 0.5em;
+        margin-bottom: 5px;
 
         position: relative;
         display: flex;
@@ -204,6 +204,45 @@ html, body {
             }
         }   
     }
+
+    #disclaimer {
+        text-align: center;
+        margin: 2em;
+        font-size: 0.7em;
+        // letter-spacing: 0;
+    }
+
+    #upcoming-and-scrapped-features-wrapper {
+        margin: auto;
+        font-size: 0.8em;
+
+        letter-spacing: -0.05em;
+
+        #upcoming-features-wrapper {
+            width: 49%;
+            display: inline-block;
+        }
+
+        #scrapped-features-wrapper {
+            float: right;
+
+            width: 49%;
+            height: 100%;
+        }
+
+        .feature-list-heading {
+            text-align: center;
+            font-size: 1.4em;
+            color: rgb(62, 62, 62);
+        }
+
+        div ul {
+            width: 77%;
+            li {
+                width: 100%;
+            }
+        }
+    }
 }
 
 .section-title {
@@ -228,6 +267,12 @@ html, body {
 
     #about #caption-wrapper {
         font-size: 1.3em;
+    }
+
+    #features-section-wrapper {
+        #upcoming-and-scrapped-features-wrapper {
+            font-size: 0.6em;
+        }
     }
 }
 

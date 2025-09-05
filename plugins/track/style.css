@@ -1,0 +1,63 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #ebebeb;
+  letter-spacing: -0.07em;
+}
+
+#nav-container nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;
+  background: #E9E9E9;
+  background: linear-gradient(0deg, rgb(233, 233, 233) 0%, rgb(220, 220, 220) 47%, rgb(211, 211, 211) 48%, rgb(240, 240, 240) 100%);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px;
+}
+#nav-container nav ul {
+  width: 50em;
+  margin: 0;
+  padding: 0;
+}
+#nav-container nav ul li, #nav-container nav ul div li {
+  list-style-type: none;
+  display: inline-block;
+}
+#nav-container nav ul li a, #nav-container nav ul li a:link, #nav-container nav ul li a:visited, #nav-container nav ul div li a, #nav-container nav ul div li a:link, #nav-container nav ul div li a:visited {
+  display: block;
+  text-align: center;
+  padding: 0.4em 1em;
+  text-decoration: none;
+  color: black;
+}
+#nav-container nav ul li a:hover, #nav-container nav ul li a:link:hover, #nav-container nav ul li a:visited:hover, #nav-container nav ul div li a:hover, #nav-container nav ul div li a:link:hover, #nav-container nav ul div li a:visited:hover {
+  background-color: blue;
+}
+#nav-container nav #nav-track img {
+  height: 1em;
+}
+
+@media only screen and (max-width: 1400px) {
+  #nav-container nav ul {
+    width: 36em;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #nav-container nav ul {
+    width: 32em;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #nav-container nav ul {
+    font-size: 0.8em;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #nav-container nav ul {
+    font-size: 0.7em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

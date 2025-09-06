@@ -115,19 +115,19 @@ html, body {
   color: #1060AF;
 }
 
-#features-section-wrapper {
+#features {
   width: 50em;
   margin: auto;
   font-size: 1.4em;
 }
-#features-section-wrapper .feature-block {
+#features .feature-block {
   width: 100%;
   height: 5em;
   margin-bottom: 5px;
   position: relative;
   display: flex;
 }
-#features-section-wrapper .feature-block .feature-image-wrapper {
+#features .feature-block .feature-image-wrapper {
   background-color: red;
   height: 100%;
   width: 50%;
@@ -135,20 +135,20 @@ html, body {
   top: 0;
   left: 0;
 }
-#features-section-wrapper .feature-block .feature-stress {
+#features .feature-block .feature-stress {
   font-weight: bold;
 }
-#features-section-wrapper .feature-block #unlimited-tracks-feature-img {
+#features .feature-block #unlimited-tracks-feature-img {
   background-image: url("track-tracks.jpg");
   background-position: 0% 0%;
   background-size: 100%;
 }
-#features-section-wrapper .feature-block #plugin-hosting-feature-img {
+#features .feature-block #plugin-hosting-feature-img {
   background-image: url("track-hosting.jpg");
   background-position: 0% 60%;
   background-size: 100%;
 }
-#features-section-wrapper .feature-block .feature-description-wrapper {
+#features .feature-block .feature-description-wrapper {
   color: whitesmoke;
   background: linear-gradient(0deg, rgb(62, 62, 62) 0%, rgb(32, 32, 32) 40%, rgb(34, 34, 34) 60%, rgb(64, 64, 64) 100%);
   height: 100%;
@@ -158,7 +158,7 @@ html, body {
   right: 0;
   border-left: 2px solid #8e8e8e;
 }
-#features-section-wrapper .feature-block .feature-description-wrapper div {
+#features .feature-block .feature-description-wrapper div {
   font-size: 1em;
   font-weight: 50;
   position: absolute;
@@ -167,61 +167,62 @@ html, body {
   transform: translate(-50%, -50%);
   width: 80%;
 }
-#features-section-wrapper #disclaimer {
+#features #disclaimer {
   text-align: center;
   margin: 2em;
   font-size: 0.7em;
 }
-#features-section-wrapper #upcoming-and-scrapped-features-wrapper {
+#features #upcoming-and-scrapped-features-wrapper {
   margin: auto;
   font-size: 0.8em;
   letter-spacing: -0.05em;
 }
-#features-section-wrapper #upcoming-and-scrapped-features-wrapper #upcoming-features-wrapper {
+#features #upcoming-and-scrapped-features-wrapper #upcoming-features-wrapper {
   width: 49%;
   display: inline-block;
 }
-#features-section-wrapper #upcoming-and-scrapped-features-wrapper #scrapped-features-wrapper {
+#features #upcoming-and-scrapped-features-wrapper #scrapped-features-wrapper {
   float: right;
   width: 49%;
   height: 100%;
 }
-#features-section-wrapper #upcoming-and-scrapped-features-wrapper .feature-list-heading {
+#features #upcoming-and-scrapped-features-wrapper .feature-list-heading {
   text-align: center;
   font-size: 1.4em;
   color: rgb(62, 62, 62);
 }
-#features-section-wrapper #upcoming-and-scrapped-features-wrapper div ul {
+#features #upcoming-and-scrapped-features-wrapper div ul {
   width: 77%;
 }
-#features-section-wrapper #upcoming-and-scrapped-features-wrapper div ul li {
+#features #upcoming-and-scrapped-features-wrapper div ul li {
   width: 100%;
 }
 
-#install-section-wrapper {
+#install {
   font-size: 1.4em;
   width: 50em;
   margin: auto;
 }
-#install-section-wrapper #install-blocks-wrapper {
+#install #install-blocks-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#install-section-wrapper #install-blocks-wrapper .install-block {
+#install #install-blocks-wrapper .install-block {
   height: 100%;
   width: 33%;
   display: inline-block;
   margin: 1em;
-  padding-bottom: 7.4em;
+  padding-bottom: 6.4em;
   display: flex;
   position: relative;
 }
-#install-section-wrapper #install-blocks-wrapper .install-block .platform-logo {
+#install #install-blocks-wrapper .install-block .platform-logo {
   height: 11em;
+  transform: scale(0.9);
   margin: 0 auto 0 auto;
 }
-#install-section-wrapper #install-blocks-wrapper .install-block .platform-details-wrapper {
+#install #install-blocks-wrapper .install-block .platform-details-wrapper {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -229,23 +230,45 @@ html, body {
   text-align: center;
   width: 100%;
 }
-#install-section-wrapper #install-blocks-wrapper .install-block .platform-details-wrapper .platform-name {
+#install #install-blocks-wrapper .install-block .platform-details-wrapper .platform-name {
   font-weight: bold;
   font-size: 1.3em;
 }
-#install-section-wrapper #install-blocks-wrapper .install-block .platform-details-wrapper .platform-arch, #install-section-wrapper #install-blocks-wrapper .install-block .platform-details-wrapper .platform-note {
+#install #install-blocks-wrapper .install-block .platform-details-wrapper .platform-arch, #install #install-blocks-wrapper .install-block .platform-details-wrapper .platform-note {
   font-size: 0.8em;
   color: grey;
 }
-#install-section-wrapper #install-blocks-wrapper .install-block .platform-details-wrapper .platform-note {
+#install #install-blocks-wrapper .install-block .platform-details-wrapper .platform-note {
   margin: 4px;
 }
-#install-section-wrapper #install-blocks-wrapper .install-block .platform-details-wrapper a img {
-  width: 6.3em;
+#install #install-blocks-wrapper .install-block .platform-details-wrapper a img {
+  width: 6em;
   margin-top: 0.6em;
 }
-#install-section-wrapper #install-blocks-wrapper .install-block .platform-details-wrapper a:hover {
+#install #install-blocks-wrapper .install-block .platform-details-wrapper a:hover {
   opacity: 0.5;
+}
+
+footer {
+  width: 50em;
+  margin: auto;
+  font-size: 1.4em;
+  letter-spacing: -0.03em;
+  color: grey;
+}
+footer #footer-jmjn {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+footer .footer-text {
+  font-size: 0.7em;
+}
+footer .footer-text a {
+  color: grey;
+}
+footer .footer-text a:hover {
+  opacity: 0.6;
 }
 
 .section-title {
@@ -261,18 +284,18 @@ html, body {
 }
 
 @media only screen and (max-width: 1400px) {
-  #nav-container nav ul, #about, #info-blocks-section-wrapper, #features-section-wrapper, #install-section-wrapper {
+  #nav-container nav ul, #about, #info-blocks-section-wrapper, #features, #install, footer {
     width: 36em;
   }
   #about #caption-wrapper {
     font-size: 1.3em;
   }
-  #features-section-wrapper #upcoming-and-scrapped-features-wrapper {
+  #features #upcoming-and-scrapped-features-wrapper {
     font-size: 0.6em;
   }
 }
 @media only screen and (max-width: 1000px) {
-  #nav-container nav ul, #about, #info-blocks-section-wrapper, #features-section-wrapper, #install-section-wrapper {
+  #nav-container nav ul, #about, #info-blocks-section-wrapper, #features, #install, footer {
     width: 32em;
   }
   #about #caption-wrapper {
@@ -281,9 +304,12 @@ html, body {
   #info-blocks-wrapper .info-block {
     font-size: 0.8em;
   }
+  footer .footer-text {
+    font-size: 0.6em;
+  }
 }
 @media only screen and (max-width: 750px) {
-  #nav-container nav ul, #about, #info-blocks-section-wrapper, #features-section-wrapper, #install-section-wrapper {
+  #nav-container nav ul, #about, #info-blocks-section-wrapper, #features, #install, footer {
     font-size: 1.2em;
     width: 90%;
   }
@@ -291,11 +317,11 @@ html, body {
     top: 12.2em;
     font-size: 3.6vw;
   }
-  #features-section-wrapper .feature-block .feature-description-wrapper div {
+  #features .feature-block .feature-description-wrapper div {
     font-size: 0.8em;
     letter-spacing: -0.02em;
   }
-  #install-section-wrapper #install-blocks-wrapper {
+  #install #install-blocks-wrapper {
     font-size: 0.8em;
   }
 }
@@ -305,11 +331,11 @@ html, body {
     letter-spacing: -0.07em;
     padding: 0.2em;
   }
-  #features-section-wrapper .feature-block .feature-description-wrapper div {
+  #features .feature-block .feature-description-wrapper div {
     font-size: 0.8em;
     letter-spacing: -0.02em;
   }
-  #install-section-wrapper #install-blocks-wrapper {
+  #install #install-blocks-wrapper {
     font-size: 0.7em;
   }
 }
@@ -317,29 +343,29 @@ html, body {
   #nav-container nav ul {
     font-size: 0.7em;
   }
-  #features-section-wrapper .feature-block .feature-description-wrapper {
+  #features .feature-block .feature-description-wrapper {
     width: 70%;
   }
-  #features-section-wrapper .feature-block .feature-description-wrapper div {
+  #features .feature-block .feature-description-wrapper div {
     font-size: 0.7em;
     letter-spacing: -0.02em;
   }
-  #features-section-wrapper .feature-block #unlimited-tracks-feature-img {
+  #features .feature-block #unlimited-tracks-feature-img {
     background-size: 120%;
     background-position: 20% 50%;
   }
-  #features-section-wrapper .feature-block #plugin-hosting-feature-img {
+  #features .feature-block #plugin-hosting-feature-img {
     background-image: url("track-hosting-alt.jpg");
     background-size: 90%;
     background-position: -90% 90%;
   }
-  #install-section-wrapper #install-blocks-wrapper {
+  #install #install-blocks-wrapper {
     font-size: 0.5em;
   }
-  #install-section-wrapper #install-blocks-wrapper .install-block {
+  #install #install-blocks-wrapper .install-block {
     padding-bottom: 9.5em;
   }
-  #install-section-wrapper #install-blocks-wrapper .install-block .platform-details-wrapper a {
+  #install #install-blocks-wrapper .install-block .platform-details-wrapper a {
     font-size: 1.4em;
   }
 }

@@ -139,7 +139,7 @@ html, body {
     }
 }
 
-#features-section-wrapper {
+#features {
     width: 50em;
     margin: auto;
     font-size: 1.4em;
@@ -245,7 +245,7 @@ html, body {
     }
 }
 
-#install-section-wrapper {
+#install {
 font-size: 1.4em;
 width: 50em;
 margin: auto;
@@ -261,13 +261,14 @@ margin: auto;
         display: inline-block;
         margin: 1em;
 
-        padding-bottom: 7.4em;
+        padding-bottom: 6.4em;
 
         display: flex;
         position: relative;
 
         .platform-logo {
             height: 11em;
+            transform: scale(0.9);
             margin: 0 auto 0 auto;
         }
 
@@ -295,7 +296,7 @@ margin: auto;
 
             a {
                 img {
-                    width: 6.3em;
+                    width: 6.0em;
                     margin-top: .6em;
                 }
 
@@ -306,6 +307,32 @@ margin: auto;
         }
     }
 }
+}
+
+footer {
+    width: 50em;
+    margin: auto;
+    font-size: 1.4em;
+
+    letter-spacing: -0.03em;
+    color: grey;
+
+    #footer-jmjn {
+        font-family: "Inter", Helvetica, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+    }
+    
+    .footer-text {
+        font-size: 0.7em;
+
+        a {
+            color: grey;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
 }
 
 .section-title {
@@ -324,7 +351,7 @@ margin: auto;
 }
 
 @media only screen and (max-width: 1400px) {
-    #nav-container nav ul, #about, #info-blocks-section-wrapper, #features-section-wrapper, #install-section-wrapper {
+    #nav-container nav ul, #about, #info-blocks-section-wrapper, #features, #install, footer {
         width: 36em;
     }
 
@@ -332,7 +359,7 @@ margin: auto;
         font-size: 1.3em;
     }
 
-    #features-section-wrapper {
+    #features {
         #upcoming-and-scrapped-features-wrapper {
             font-size: 0.6em;
         }
@@ -340,7 +367,7 @@ margin: auto;
 }
 
 @media only screen and (max-width: 1000px) {
-    #nav-container nav ul, #about, #info-blocks-section-wrapper, #features-section-wrapper, #install-section-wrapper {
+    #nav-container nav ul, #about, #info-blocks-section-wrapper, #features, #install, footer {
         width: 32em;
     }
 
@@ -351,10 +378,16 @@ margin: auto;
     #info-blocks-wrapper .info-block {
         font-size: 0.8em;
     }
+
+    footer {
+        .footer-text {
+            font-size: 0.6em;
+        }
+    }
 }
 
 @media only screen and (max-width: 750px) {
-    #nav-container nav ul, #about, #info-blocks-section-wrapper, #features-section-wrapper, #install-section-wrapper {
+    #nav-container nav ul, #about, #info-blocks-section-wrapper, #features, #install, footer {
         font-size: 1.2em;
         width: 90%;
     }
@@ -364,7 +397,7 @@ margin: auto;
         font-size: 3.6vw;
     }
 
-    #features-section-wrapper {
+    #features {
         .feature-block {
             .feature-description-wrapper {
                 div {
@@ -375,7 +408,7 @@ margin: auto;
         }
     }
 
-    #install-section-wrapper {
+    #install {
         #install-blocks-wrapper {
             font-size: 0.8em;
         }
@@ -390,7 +423,7 @@ margin: auto;
         padding: 0.2em;
     }
 
-    #features-section-wrapper {
+    #features {
         .feature-block {
             .feature-description-wrapper {
                 div {
@@ -401,7 +434,7 @@ margin: auto;
         }
     }
 
-    #install-section-wrapper {
+    #install {
         #install-blocks-wrapper {
             font-size: 0.7em;
         }
@@ -414,7 +447,7 @@ margin: auto;
         font-size: 0.7em;
     }
 
-    #features-section-wrapper {
+    #features {
         .feature-block {
             .feature-description-wrapper {
                 width: 70%;
@@ -438,7 +471,7 @@ margin: auto;
         }
     }
 
-    #install-section-wrapper {
+    #install {
         #install-blocks-wrapper {
             font-size: 0.5em;
 

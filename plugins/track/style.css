@@ -338,6 +338,9 @@ footer .footer-text a:hover {
   #install #install-blocks-wrapper {
     font-size: 0.7em;
   }
+  footer .footer-text {
+    font-size: 0.5em;
+  }
 }
 @media only screen and (max-width: 500px) {
   #nav-container nav ul {

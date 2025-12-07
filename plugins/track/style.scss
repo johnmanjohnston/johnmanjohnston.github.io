@@ -181,7 +181,9 @@ html, body {
 
         .feature-description-wrapper {
             color: whitesmoke;
-            background: linear-gradient(0deg,rgb(62, 62, 62) 0%, rgba(32, 32, 32, 1) 40%, rgba(34, 34, 34, 1) 60%, rgba(64, 64, 64, 1) 100%);
+            // background: linear-gradient(0deg,rgb(62, 62, 62) 0%, rgba(32, 32, 32, 1) 40%, rgba(34, 34, 34, 1) 60%, rgba(64, 64, 64, 1) 100%);
+            background: url('glossy-bg.jpg');
+            background-size: 100% 100%;
 
             height: 100%;
             width: 50%;
@@ -209,14 +211,12 @@ html, body {
         text-align: center;
         margin: 2em;
         font-size: 0.7em;
-        // letter-spacing: 0;
     }
 
     #upcoming-and-scrapped-features-wrapper {
         margin: auto;
         font-size: 0.8em;
 
-        letter-spacing: -0.05em;
 
         #upcoming-features-wrapper {
             width: 49%;
@@ -314,7 +314,6 @@ footer {
     margin: auto;
     font-size: 1.4em;
 
-    letter-spacing: -0.03em;
     color: grey;
 
     #footer-jmjn {
@@ -346,8 +345,6 @@ footer {
     -webkit-text-fill-color: transparent;
 
     text-align: center;
-
-    letter-spacing: -0.07em;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -360,6 +357,10 @@ footer {
     }
 
     #features {
+      .feature-block {
+        height: 4.4em;
+      }
+
         #upcoming-and-scrapped-features-wrapper {
             font-size: 0.6em;
         }
@@ -369,6 +370,12 @@ footer {
 @media only screen and (max-width: 1000px) {
     #nav-container nav ul, #about, #info-blocks-section-wrapper, #features, #install, footer {
         width: 32em;
+    }
+
+    #features {
+      .feature-block {
+        font-size: 0.9em;
+      }
     }
 
     #about #caption-wrapper {
@@ -402,7 +409,6 @@ footer {
             .feature-description-wrapper {
                 div {
                     font-size: 0.8em;
-                    letter-spacing: -0.02em;
                 }
             }
         }
@@ -419,7 +425,6 @@ footer {
 @media only screen and (max-width: 650px) {
     #info-blocks-section-wrapper {
         font-size: 0.9em;
-        letter-spacing: -0.07em;
         padding: 0.2em;
     }
 
@@ -428,7 +433,6 @@ footer {
             .feature-description-wrapper {
                 div {
                     font-size: 0.8em;
-                    letter-spacing: -0.02em;
                 }
             }
         }
@@ -458,10 +462,11 @@ footer {
         .feature-block {
             .feature-description-wrapper {
                 width: 70%;
+                background-size: 200% 120%;
+                background-position: 50% -17px;
 
                 div {
                     font-size: 0.7em;
-                    letter-spacing: -0.02em;
                 }
             }
 

@@ -131,6 +131,7 @@ html {
   z-index: 3;
   position: relative;
   white-space: nowrap;
+  color: white;
 }
 #this-is-track span {
   font-weight: bold;
@@ -144,7 +145,7 @@ html {
   letter-spacing: -1px;
   font-size: 2.3em;
   width: 80%;
-  text-shadow: 0px 0px 4px black;
+  text-shadow: 0px 0px 4px black, 0px 0px 4px white;
 }
 
 #sp-wrapper {
@@ -240,7 +241,7 @@ html {
     display: none;
   }
   #bg {
-    background-color: rgb(160, 160, 160);
+    background-color: rgb(177, 177, 177);
   }
   .container {
     width: 100%;

@@ -10,6 +10,8 @@ html {
   overflow-x: clip;
 }
 
+// * { outline: 1px solid red; }
+
 #bg {
   background-color: #979797;
   background-image: url("carbon-fibre-big.png");
@@ -243,7 +245,7 @@ html {
   }
 
     #sp-wrapper {
-        gap: 10px;
+        gap: 20px;
         height: 4.5em;
 
         .sp {
@@ -285,8 +287,37 @@ html {
     }
 }
 
-// iPad is 890px
+// for smaller screens
 @media only screen and (max-width: 600px) {
+    #sp-wrapper {
+        margin: 14em auto 0 auto;
+        backdrop-filter: none;
+        box-shadow: none;
+        display: block;
+        height: 20em;
+        background: none;
+        padding: 0;
+
+        font-size: 0.9em;
+        width: 100%;
+
+        .sp {
+            font-size: 1.6em;
+            height: fit-content;
+            padding: 0.7em 1em;
+            margin: 0.8em auto;
+
+            backdrop-filter: blur(3px);
+            background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0, 0.3), 25%, rgba(0,0,0, 0.4), 50%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.2) 100%);
+            box-shadow: 
+                inset 0px 0px 14px 9px rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    .margined-container {
+        width: 30em;
+    }
+
   .hide-for-mobile {
     display: none;
   }
@@ -344,6 +375,17 @@ html {
   .container {
     font-size: 0.65em;
   }
+
+  .margined-container {
+    width: 25em;
+  }
+
+  #sp-wrapper {
+    width: 90%;
+    .sp {
+        font-size: 1.2em;
+    }
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -355,5 +397,9 @@ html {
 @media only screen and (max-width: 360px) {
   .container {
     font-size: 0.5em;
+  }
+
+  .margined-container {
+    width: 22em;
   }
 }

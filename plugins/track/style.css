@@ -3,10 +3,11 @@ body, html {
   padding: 0;
   margin: 0;
   font-family: "Inter Tight", "Inter", "Helvetica", sans-serif;
+  overflow-x: clip;
 }
 
 #bg {
-  background-color: #555;
+  background-color: #575757;
   background-image: url("carbon-fibre-big.png");
   width: 100%;
   height: 100%;
@@ -33,7 +34,7 @@ body, html {
   font-size: 1.3em;
   background: #E9E9E9;
   background: linear-gradient(180deg, rgb(55, 55, 55) 50%, rgb(27, 27, 27) 50%);
-  box-shadow: rgba(0, 0, 0, 0.9) 0px 4px 30px;
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 8px 30px;
 }
 #nav-container nav ul {
   margin: auto;
@@ -66,6 +67,15 @@ body, html {
   padding-right: 0;
 }
 
+#bg-sep-orb {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  transform: scale(6, 4) translateY(20px);
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
+}
+
 .linear-gradient {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0) 100%);
 }
@@ -73,7 +83,9 @@ body, html {
 .container {
   margin: auto;
   display: flex;
+  position: relative;
   width: 69em;
+  overflow: visible;
 }
 
 #pc-img {
@@ -90,7 +102,6 @@ body, html {
   color: white;
   align-self: center;
   margin-bottom: 4em;
-  overflow: hidden;
   position: relative;
   padding: 2em;
 }
@@ -160,7 +171,7 @@ body, html {
     text-align: center;
     position: absolute;
     width: 80%;
-    top: calc(34em + 50px);
+    top: calc(30em + 0px);
     left: 50%;
     transform: translateX(-50%);
     margin: auto;
@@ -169,6 +180,10 @@ body, html {
     width: 10em;
     font-size: 2.7em;
     margin: auto;
+  }
+  #bg-sep-orb {
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
+    transform: scale(5, 4);
   }
   #pc-img {
     margin: auto;

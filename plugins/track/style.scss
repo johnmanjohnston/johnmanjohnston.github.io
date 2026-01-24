@@ -10,7 +10,7 @@ body, html {
 }
 
 #bg {
-  background-color: #575757;
+  background-color: #606060;
   background-image: url('carbon-fibre-big.png');
   
   width: 100%;
@@ -48,6 +48,7 @@ body, html {
         box-shadow: rgba(0, 0, 0, 0.9) 0px 8px 30px;
 
 
+
         ul {
             margin: auto; 
             padding: 0; 
@@ -63,6 +64,7 @@ body, html {
 
                 // background: red;
 
+        z-index: 2;
                 a, a:link, a:visited {
                     color: white;
                     display: block;
@@ -111,9 +113,9 @@ body, html {
   background:
     linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.95) 0%,
+      #222 0%,
       rgba(0, 0, 0, 0.2) 40%,
-      rgba(0, 0, 0, 0) 100%
+      rgba(0, 0, 0, 0.0) 100%
   );
 }
 
@@ -224,6 +226,8 @@ body, html {
 
 // iPad is 890px
 @media only screen and (max-width: 600px) {
+  .hide-for-mobile { display:none; }
+
   #bg {
     background-color: rgb(160, 160, 160);
   }
@@ -257,7 +261,7 @@ body, html {
   #bg-sep-orb {
     background: radial-gradient(
       circle at center,
-      rgba(0, 0, 0, 0.4) 0,
+      rgba(0, 0, 0, 0.7) 0,
       rgba(0, 0, 0, 0) 30%,
       rgba(0, 0, 0, 0) 100%
     );

@@ -28,6 +28,47 @@ body, html {
   box-shadow: inset 0 -10px 200px 100px rgba(10, 10, 10, 0.8);
 }
 
+#nav-container nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+  background: #E9E9E9;
+  background: linear-gradient(180deg, rgb(55, 55, 55) 50%, rgb(27, 27, 27) 50%);
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 4px 30px;
+}
+#nav-container nav ul {
+  margin: auto;
+  padding: 0;
+  width: 49em;
+}
+#nav-container nav ul li, #nav-container nav ul div li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 0.5em;
+  margin-left: 1em;
+}
+#nav-container nav ul li a, #nav-container nav ul li a:link, #nav-container nav ul li a:visited, #nav-container nav ul div li a, #nav-container nav ul div li a:link, #nav-container nav ul div li a:visited {
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 0.5em 0.2em;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+}
+#nav-container nav ul li a:hover, #nav-container nav ul li a:link:hover, #nav-container nav ul li a:visited:hover, #nav-container nav ul div li a:hover, #nav-container nav ul div li a:link:hover, #nav-container nav ul div li a:visited:hover {
+  opacity: 0.4;
+  background: rgba(0, 0, 0, 0.2);
+}
+#nav-container nav #nav-track {
+  margin: 0;
+}
+#nav-container nav #nav-track a {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .linear-gradient {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0) 100%);
 }
@@ -100,6 +141,9 @@ body, html {
   .container {
     font-size: 0.8em;
   }
+  #nav-container nav ul {
+    width: 39em;
+  }
 }
 @media only screen and (max-width: 900px) {
   .opener-section {
@@ -108,10 +152,19 @@ body, html {
   .container {
     font-size: 0.6em;
   }
+  #nav-container nav ul {
+    width: 30em;
+  }
 }
 @media only screen and (max-width: 700px) {
   .container {
     font-size: 0.5em;
+  }
+  #nav-container nav {
+    font-size: 0.9em;
+  }
+  #nav-container nav ul {
+    width: 35em;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -136,7 +189,7 @@ body, html {
     text-align: center;
     position: absolute;
     width: 100%;
-    top: calc(33em + 10px);
+    top: calc(34em + 50px);
     margin: 0;
   }
   #opener-texts-wrapper #slogan {
@@ -147,6 +200,9 @@ body, html {
   #pc-img {
     margin: auto;
     width: 38em;
+  }
+  #nav-container nav ul {
+    width: 80%;
   }
 }
 @media only screen and (max-width: 470px) {

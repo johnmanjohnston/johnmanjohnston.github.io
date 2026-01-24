@@ -35,6 +35,65 @@ body, html {
   }
 }
 
+#nav-container {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 1.3em;
+        background: #E9E9E9;
+        // background: linear-gradient(180deg, rgba(233, 233, 233, 1) 0%, rgba(220, 220, 220, 1) 47%, rgba(211, 211, 211, 1) 48%, rgba(240, 240, 240, 1) 100%);
+        background: linear-gradient(180deg,rgba(55, 55, 55, 1) 50%, rgba(27, 27, 27, 1) 50%);
+
+        box-shadow: rgba(0, 0, 0, 0.9) 0px 4px 30px;
+
+
+        ul {
+            margin: auto; 
+            padding: 0; 
+
+            width: 49em;
+            // background: red;
+
+            li, div li {
+                list-style-type: none;
+                display: inline-block;
+
+                margin-left: 0.5em;
+
+                // background: red;
+
+                a, a:link, a:visited {
+                    color: white;
+                    display: block;
+                    text-align: center;
+                    padding: .5em 0.2em;
+                    text-decoration: none;
+                    font-style: italic;
+                    font-weight: bold;
+
+
+                    &:hover {
+                        opacity: 0.4;
+                        background: rgba(0, 0, 0, 0.2);
+                    }
+                }
+
+                margin-left: 1em;
+            }
+        }
+
+        #nav-track {
+            a {
+              padding-left: 0;
+              padding-right: 0;
+            }
+            margin: 0;
+        }
+    }
+}
+
 .linear-gradient {
   background:
     linear-gradient(
@@ -47,7 +106,7 @@ body, html {
 
 .container {
   // debug
-  //background: red; 
+  // background: red; 
   margin: auto;
   display: flex;
   width: 69em;
@@ -135,6 +194,10 @@ z-index: -1;
   .container {
     font-size: 0.8em;
   }
+
+  #nav-container nav ul {
+    width: 39em;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -143,11 +206,25 @@ z-index: -1;
   .container {
     font-size: 0.6em;
   }
+
+
+  #nav-container nav ul {
+    width: calc(30em);
+  }
 }
 
 @media only screen and (max-width: 700px) {
   .container {
     font-size: 0.5em;
+  }
+
+
+  #nav-container nav {
+  font-size: 0.9em;
+
+      ul {
+      width: calc(35em);
+    }
   }
 }
 
@@ -183,7 +260,7 @@ z-index: -1;
 
     position: absolute;
     width: 100%;
-    top: calc(33em + 10px);
+    top: calc(34em + 50px);
     // margin: 0em 0 -10em 0em;
     margin: 0; 
 
@@ -199,6 +276,11 @@ z-index: -1;
   #pc-img {
     margin: auto;
     width: 38em;
+  }
+
+
+  #nav-container nav ul {
+    width: 80%;
   }
 }
 

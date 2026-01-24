@@ -126,6 +126,8 @@ html {
   );
 }
 
+.show-only-on-small-screens { display: none; }
+
 .linear-gradient {
   background: linear-gradient(
     to bottom,
@@ -321,6 +323,10 @@ html {
 
   .hide-for-mobile {
     display: none;
+  }
+
+  .show-only-on-small-screens {
+    display: block;
   }
 
   #bg {

@@ -55,7 +55,7 @@ html {
 }
 
 #rods-container {
-  height: 10em;
+  height: 8em;
   width: 100%;
   position: relative;
 }
@@ -63,7 +63,7 @@ html {
 .rod {
     position: absolute; 
     left: 50%; 
-    top: 28%;
+    top: 35%;
     transform: translateX(-50%) scale(1, 1);
     width: 120vw;
     height: 2em;
@@ -288,9 +288,59 @@ html {
     color: #66B9E3;
 }
 
+
+$feature-card-padding-v: 0.8em;
+$feature-card-padding-h: 1.5em;
+$feature-card-width: 49%;
+.feature-wrapper {
+  width: 100%;
+  height: 6em;
+
+  margin-top: 0.8em;
+
+  // background-color: red;
+
+  .feature-img {
+    width: $feature-card-width;
+    height: 100%;
+    background: black;
+
+    display: inline-block;
+  }
+
+  .feature-desc {
+    width: calc($feature-card-width - (2 * $feature-card-padding-h));
+    height: calc(100% - (2 * $feature-card-padding-v));
+    padding: $feature-card-padding-v $feature-card-padding-h;
+    background: green;
+
+    float: right;
+    background: url('card-bg.jpg');
+    background-size: 100% 100%;
+
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.8);
+    
+    color: white;
+    font-weight: 200;
+
+    text-shadow: 0px 3px 10px rgba(0,0,0, 1);
+
+    font-size: 1.1em;
+
+    span {
+      font-weight: bold;
+      text-shadow: 0px 0px 16px rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
 // 1200px, 900px, 570px, 400px
 
 @media only screen and (max-width: 1200px) {
+  .feature-wrapper {
+    font-size: 0.8em;
+  }
+
   .container {
     font-size: 0.8em;
   }
@@ -309,7 +359,7 @@ html {
     }
 
   .rod {
-    top: 17%;
+    top: 21%;
   }
 
   #features-heading {
@@ -318,6 +368,10 @@ html {
 }
 
 @media only screen and (max-width: 900px) {
+  .feature-wrapper {
+    font-size: 0.7em;
+  }
+
   .opener-section {
     margin: 0;
   }
@@ -338,8 +392,12 @@ html {
         }
     }
 
-    .rod {
-    top: 10%;
+  #rods-container {
+    height: 6em;
+  }
+
+  .rod {
+    top: 16%;
     transform: translateX(-50%) scale(1, 0.7);
   }
 
@@ -358,8 +416,12 @@ html {
         width: calc(35em);
     }
 
+    #rods-container {
+      height: 7em;
+    }
+
   .rod {
-    top: 15%;
+    top: 18%;
   }
 
   #features-heading {
@@ -367,8 +429,31 @@ html {
   }
 }
 
+$feature-card-padding-h-mob: 1.0em;
+$feature-card-padding-v-mob: 0.8em;
+
 // for smaller screens
 @media only screen and (max-width: 600px) {
+    .feature-wrapper {
+      height: 20em;
+
+      .feature-img {
+        width: 100%;
+        height: 60%;
+        transform: translateY(2px);
+      }
+
+      .feature-desc {
+        font-size: 1.8em;
+        width: calc(100% - (2 * $feature-card-padding-h-mob));
+        height: calc(40% - (2 * $feature-card-padding-v-mob));
+        padding: $feature-card-padding-v-mob $feature-card-padding-h-mob;
+
+        float: left;
+        margin: auto;
+      }
+    }
+
     #sp-wrapper {
         margin: 16em auto 0 auto;
         backdrop-filter: none;
@@ -462,6 +547,10 @@ html {
     font-size: 1.9em;
   }
   
+  .rod {
+    top: 22%;
+  }
+
   #rod2 {
     margin-top: 1em;
   }
@@ -469,7 +558,7 @@ html {
 
 @media only screen and (max-width: 470px) {
   .rod {
-    top: 10%;
+    top: 14%;
   }
 
   #plate {
@@ -499,13 +588,30 @@ html {
   }
 
   #features-heading {
-    font-size: 1.6em;
+    font-size: 1.55em;
+  }
+
+  .feature-wrapper {
+    height: 16em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .feature-desc {
+      font-size: 1.35em;
+      height: fit-content;
+      padding-bottom: 1.2em;
+    }
   }
 }
 
 @media only screen and (max-width: 400px) {
   .container {
     font-size: 0.58em;
+  }
+
+  .margined-container {
+    width: 24em;
   }
 
   #sp-wrapper {
@@ -517,11 +623,16 @@ html {
   }
 
   .rod {
-    top: 10%;
+    top: 13%;
   }
 
   #features-heading {
-    font-size: 1.56em;
+    font-size: 1.5em;
+  }
+
+  .feature-wrapper {
+    width: 90%;
+    margin: auto;
   }
 }
 
@@ -531,11 +642,12 @@ html {
   }
 
   .margined-container {
-    width: 22em;
+    width: 20em;
   }
 
   #sp-wrapper {
     margin-top: 10.8em;
+    height: 17em;
   }
 
   .rod {
@@ -543,6 +655,12 @@ html {
   }
 
   #features-heading {
-    font-size: 1.38em;
+    font-size: 1.25em;
+  }
+
+  #sp-wrapper {
+    .sp {
+      font-size: 1em;
+    }
   }
 }

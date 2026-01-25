@@ -71,6 +71,8 @@ html {
     background-size: auto 100%;
 }
 
+#rod2 {margin-top: 2em;}
+
 #nav-container {
   nav {
     display: flex;
@@ -455,9 +457,25 @@ html {
   #features-heading-wrapper {
     margin-top: 8em;
   }
+
+  #features-heading {
+    font-size: 1.9em;
+  }
+  
+  #rod2 {
+    margin-top: 1em;
+  }
 }
 
 @media only screen and (max-width: 470px) {
+  .rod {
+    top: 10%;
+  }
+
+  #plate {
+    transform: scale(1);
+  }
+
   .container {
     font-size: 0.65em;
   }
@@ -479,6 +497,10 @@ html {
   #features-heading-wrapper {
     margin-top: 2em;
   }
+
+  #features-heading {
+    font-size: 1.6em;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -493,6 +515,14 @@ html {
   #features-heading-wrapper {
     margin-top: 2.5em;
   }
+
+  .rod {
+    top: 10%;
+  }
+
+  #features-heading {
+    font-size: 1.56em;
+  }
 }
 
 @media only screen and (max-width: 360px) {
@@ -506,5 +536,13 @@ html {
 
   #sp-wrapper {
     margin-top: 10.8em;
+  }
+
+  .rod {
+    top: 7%;
+  }
+
+  #features-heading {
+    font-size: 1.38em;
   }
 }

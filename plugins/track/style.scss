@@ -429,28 +429,31 @@ $feature-card-width: 49%;
   }
 }
 
-$feature-card-padding-h-mob: 1.0em;
+$feature-card-padding-h-mob: 0.7em;
 $feature-card-padding-v-mob: 0.8em;
 
 // for smaller screens
 @media only screen and (max-width: 600px) {
     .feature-wrapper {
       height: 20em;
+      padding-bottom: 2em;
 
       .feature-img {
         width: 100%;
-        height: 60%;
+        height: 65%;
         transform: translateY(2px);
       }
 
       .feature-desc {
         font-size: 1.8em;
         width: calc(100% - (2 * $feature-card-padding-h-mob));
-        height: calc(40% - (2 * $feature-card-padding-v-mob));
+        height: calc(35% - (2 * $feature-card-padding-v-mob));
         padding: $feature-card-padding-v-mob $feature-card-padding-h-mob;
 
         float: left;
         margin: auto;
+
+        letter-spacing: -0.01em;
       }
     }
 

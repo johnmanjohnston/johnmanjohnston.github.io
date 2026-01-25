@@ -73,8 +73,7 @@ html {
 #nav-container nav ul div li a:hover,
 #nav-container nav ul div li a:link:hover,
 #nav-container nav ul div li a:visited:hover {
-  opacity: 0.4;
-  background: rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 0px 16px white;
 }
 #nav-container nav #nav-track {
   margin: 0;
@@ -169,6 +168,7 @@ html {
   height: 100%;
   color: white;
   font-weight: 300;
+  text-shadow: 0px 2px 4px black;
 }
 
 .stress {
@@ -219,7 +219,7 @@ html {
 }
 @media only screen and (max-width: 600px) {
   #sp-wrapper {
-    margin: 14em auto 0 auto;
+    margin: 16em auto 0 auto;
     backdrop-filter: none;
     box-shadow: none;
     display: block;
@@ -248,7 +248,7 @@ html {
     display: block;
   }
   #bg {
-    background-color: rgb(177, 177, 177);
+    background-color: rgb(206, 206, 206);
   }
   .container {
     width: 100%;
@@ -270,8 +270,8 @@ html {
     margin: auto;
   }
   #bg-sep-orb {
-    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.7) 0, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
-    transform: scale(5, 4);
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
+    transform: scale(12, 4) translate(-5px, 0px);
   }
   #pc-img {
     margin: auto;
@@ -290,6 +290,7 @@ html {
   }
   #sp-wrapper {
     width: 90%;
+    margin-top: 13.4em;
   }
   #sp-wrapper .sp {
     font-size: 1.2em;
@@ -299,6 +300,9 @@ html {
   .container {
     font-size: 0.58em;
   }
+  #sp-wrapper {
+    margin-top: 12.5em;
+  }
 }
 @media only screen and (max-width: 360px) {
   .container {
@@ -306,6 +310,9 @@ html {
   }
   .margined-container {
     width: 22em;
+  }
+  #sp-wrapper {
+    margin-top: 10.8em;
   }
 }
 

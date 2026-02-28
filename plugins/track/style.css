@@ -8,7 +8,7 @@ html {
 }
 
 #bg {
-  background-color: #8d8d8d;
+  background-color: #3d3d3d;
   background-image: url("carbon-fibre-big.png");
   width: 100%;
   height: 100%;
@@ -16,16 +16,6 @@ html {
   background-repeat: repeat;
   background-size: 20px;
   z-index: -5;
-}
-#bg::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  box-shadow: inset 0 -10px 200px 100px rgba(10, 10, 10, 0.8);
 }
 
 .margined-container {
@@ -118,7 +108,7 @@ html {
   position: absolute;
   z-index: -1;
   transform: scale(12, 4) translate(-5px, 7px);
-  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
 }
 
 .show-only-on-small-screens {
@@ -185,7 +175,8 @@ html {
   padding: 1em;
   backdrop-filter: blur(3px);
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3), 25%, rgba(0, 0, 0, 0.4), 50%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.2) 100%);
-  box-shadow: inset 0px -2px 14px 4px rgba(0, 0, 0, 0.6);
+  background: url("scratchy-shiny.jpg");
+  box-shadow: 0px 0px 14px 4px rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-self: center;
@@ -197,14 +188,13 @@ html {
   height: 100%;
   color: white;
   font-weight: 300;
-  text-shadow: 0px 2px 4px black;
 }
 
-#features-heading-wrapper {
+.heading-wrapper {
   margin-top: 1em;
 }
 
-#features-heading {
+.topic {
   color: white;
   position: absolute;
   z-index: 7;
@@ -213,7 +203,6 @@ html {
   height: 100%;
   font-size: 3em;
   top: 0.85em;
-  font-style: italic;
   font-weight: bold;
   text-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
 }
@@ -272,7 +261,7 @@ html {
   .rod {
     top: 21%;
   }
-  #features-heading {
+  .topic {
     font-size: 2.4em;
   }
 }
@@ -303,7 +292,7 @@ html {
     top: 16%;
     transform: translateX(-50%) scale(1, 0.7);
   }
-  #features-heading {
+  .topic {
     font-size: 1.9em;
   }
 }
@@ -321,7 +310,7 @@ html {
   .rod {
     top: 18%;
   }
-  #features-heading {
+  .topic {
     font-size: 2.1em;
   }
 }
@@ -362,7 +351,8 @@ html {
     margin: 0.8em auto;
     backdrop-filter: blur(3px);
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3), 25%, rgba(0, 0, 0, 0.4), 50%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.2) 100%);
-    box-shadow: inset 0px 0px 14px 9px rgba(0, 0, 0, 0.6);
+    background: url("scratchy-shiny.jpg");
+    box-shadow: 0px 0px 14px 9px rgba(0, 0, 0, 0.6);
   }
   .margined-container {
     width: 30em;
@@ -374,7 +364,7 @@ html {
     display: block;
   }
   #bg {
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(63, 63, 63);
   }
   .container {
     width: 100%;
@@ -396,7 +386,7 @@ html {
     margin: auto;
   }
   #bg-sep-orb {
-    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
     transform: scale(12, 4) translate(-5px, 0px);
   }
   #pc-img {
@@ -406,10 +396,11 @@ html {
   #nav-container nav ul {
     width: 80%;
   }
-  #features-heading-wrapper {
+  .heading-wrapper {
     margin-top: 8em;
+    height: 5em;
   }
-  #features-heading {
+  .topic {
     font-size: 1.9em;
   }
   .rod {
@@ -438,13 +429,11 @@ html {
   }
   #sp-wrapper .sp {
     font-size: 1.2em;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1), 25%, rgba(0, 0, 0, 0.2), 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0) 100%);
-    box-shadow: inset 0px 0px 14px 4px rgba(0, 0, 0, 0.7);
   }
-  #features-heading-wrapper {
+  .heading-wrapper {
     margin-top: 2em;
   }
-  #features-heading {
+  .topic {
     font-size: 1.55em;
   }
   .feature-wrapper {
@@ -469,13 +458,13 @@ html {
   #sp-wrapper {
     margin-top: 12.5em;
   }
-  #features-heading-wrapper {
+  .heading-wrapper {
     margin-top: 2.5em;
   }
   .rod {
     top: 13%;
   }
-  #features-heading {
+  .topic {
     font-size: 1.5em;
   }
   .feature-wrapper {
@@ -497,7 +486,7 @@ html {
   .rod {
     top: 7%;
   }
-  #features-heading {
+  .topic {
     font-size: 1.25em;
   }
   #sp-wrapper .sp {

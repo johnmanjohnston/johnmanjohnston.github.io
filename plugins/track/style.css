@@ -334,6 +334,9 @@ html {
   .topic {
     font-size: 2.1em;
   }
+  .feature-wrapper .feature-desc {
+    font-size: 1.2em;
+  }
 }
 @media only screen and (max-width: 600px) {
   .feature-wrapper {
@@ -346,7 +349,7 @@ html {
     transform: translateY(2px);
   }
   .feature-wrapper .feature-desc {
-    font-size: 1.8em;
+    font-size: 1.9em;
     width: calc(100% - 1.4em);
     height: calc(35% - 1.6em);
     padding: 0.8em 0.7em;
@@ -422,7 +425,8 @@ html {
     height: 5em;
   }
   .topic {
-    font-size: 1.9em;
+    font-size: 2.7em;
+    top: 0.4em;
   }
   .rod {
     top: 22%;
@@ -455,16 +459,17 @@ html {
     margin-top: 2em;
   }
   .topic {
-    font-size: 1.55em;
+    font-size: 1.9em;
+    top: 0.6em;
   }
   .feature-wrapper {
-    height: 16em;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3em;
   }
   .feature-wrapper .feature-desc {
-    font-size: 1.35em;
+    font-size: 1.8em;
     height: fit-content;
     padding-bottom: 1.2em;
   }
@@ -486,11 +491,12 @@ html {
     top: 13%;
   }
   .topic {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
   .feature-wrapper {
     width: 90%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media only screen and (max-width: 360px) {
@@ -508,7 +514,7 @@ html {
     top: 7%;
   }
   .topic {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
   #sp-wrapper .sp {
     font-size: 1em;

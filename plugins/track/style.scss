@@ -452,6 +452,12 @@ $feature-card-width: 49%;
   .topic {
     font-size: 2.1em;
   }
+
+  .feature-wrapper {
+    .feature-desc {
+      font-size: 1.2em;
+    }
+  }
 }
 
 $feature-card-padding-h-mob: 0.7em;
@@ -470,7 +476,7 @@ $feature-card-padding-v-mob: 0.8em;
       }
 
       .feature-desc {
-        font-size: 1.8em;
+        font-size: 1.9em;
         width: calc(100% - (2 * $feature-card-padding-h-mob));
         height: calc(35% - (2 * $feature-card-padding-v-mob));
         padding: $feature-card-padding-v-mob $feature-card-padding-h-mob;
@@ -574,7 +580,8 @@ $feature-card-padding-v-mob: 0.8em;
   }
 
   .topic {
-    font-size: 1.9em;
+    font-size: 2.7em;
+    top: 0.4em;
   }
   
   .rod {
@@ -618,17 +625,19 @@ $feature-card-padding-v-mob: 0.8em;
   }
 
   .topic {
-    font-size: 1.55em;
+    font-size: 1.9em;
+    top: 0.6em;
   }
 
   .feature-wrapper {
-    height: 16em;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
 
+    margin-bottom: 3em;
+
     .feature-desc {
-      font-size: 1.35em;
+      font-size: 1.8em;
       height: fit-content;
       padding-bottom: 1.2em;
     }
@@ -657,12 +666,14 @@ $feature-card-padding-v-mob: 0.8em;
   }
 
   .topic {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
 
   .feature-wrapper {
     width: 90%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+
   }
 }
 
@@ -685,7 +696,7 @@ $feature-card-padding-v-mob: 0.8em;
   }
 
   .topic {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 
   #sp-wrapper {

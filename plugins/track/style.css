@@ -187,7 +187,7 @@ html {
   font-size: 1em;
   height: 100%;
   color: white;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .heading-wrapper {
@@ -195,16 +195,16 @@ html {
 }
 
 .topic {
-  color: white;
+  color: #141414;
   position: absolute;
   z-index: 7;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4), 0px 0px 16px rgba(255, 255, 255, 0.2);
   text-align: center;
   width: 100%;
   height: 100%;
   font-size: 3em;
   top: 0.85em;
   font-weight: bold;
-  text-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
 }
 
 .stress {
@@ -223,18 +223,17 @@ html {
   display: inline-block;
 }
 .feature-wrapper .feature-desc {
-  width: calc(49% - 3em);
+  width: calc(49% - 2em);
   height: calc(100% - 1.6em);
-  padding: 0.8em 1.5em;
+  padding: 0.8em 1em;
   background: green;
   float: right;
   background: url("card-bg.jpg");
   background-size: 100% 100%;
   box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.8);
   color: white;
-  font-weight: 200;
-  text-shadow: 0px 3px 10px rgb(0, 0, 0);
-  font-size: 1.1em;
+  font-weight: 300;
+  font-size: 1.15em;
 }
 .feature-wrapper .feature-desc span {
   font-weight: bold;
@@ -267,7 +266,7 @@ html {
 }
 @media only screen and (max-width: 900px) {
   .feature-wrapper {
-    font-size: 0.7em;
+    font-size: 0.63em;
   }
   .opener-section {
     margin: 0;

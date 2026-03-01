@@ -291,7 +291,7 @@ html {
 #install-wrapper {
   margin-top: 2em;
   width: 100%;
-  height: 40em;
+  height: 45em;
 
   background: 
               linear-gradient(to bottom, #373737, black);
@@ -311,10 +311,57 @@ html {
 }
 
 #platforms-wrapper {
-  // outline: 1px solid red;
   position: relative;
-  height: 10em;
+  height: 22em;
   top: 8em;
+
+  display: flex;
+    justify-content: space-between; // W3SCHOOLS MY LOVE <33333
+
+  .platform-block {
+    width: 32%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    img {
+      height: 20em;
+    }
+
+    .install-texts {
+      position: absolute;
+      width: 100%;
+      height: 42%;
+      bottom: 0;
+      text-align: center;
+
+      font-weight: bold;
+      color: white;
+
+      .platform-name {
+        font-size: 2em;
+        text-shadow: 0px 0px 16px rgba(255,255,255,0.5);
+      }
+
+      .platform-note {
+        font-size: 0.8em;
+      }
+
+      a {
+        background: linear-gradient(to bottom, #818181 0%, #6e6e6e 20%, #535353 55%, #595959 70%, #838383 100%);
+        padding: 0.1em 1.2em;
+        font-size: 1em;
+        opacity: 0.8;
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
 
 $feature-card-padding-v: 0.8em;
@@ -464,7 +511,8 @@ $feature-card-width: 49%;
 }
 
 $feature-card-padding-h-mob: 0.7em;
-$feature-card-padding-v-mob: 0.8em;
+$feature-card-padding-v-mob: 0.6em;
+$feature-card-border-color: rgb(50,50,50);
 
 // for smaller screens
 @media only screen and (max-width: 600px) {
@@ -473,14 +521,17 @@ $feature-card-padding-v-mob: 0.8em;
       padding-bottom: 2em;
 
       .feature-img {
-        width: 100%;
+        width: calc(100% - 2px);
         height: 65%;
         transform: translateY(2px);
+
+        border: 1px solid $feature-card-border-color;
+        border-bottom: none;
       }
 
       .feature-desc {
         font-size: 1.9em;
-        width: calc(100% - (2 * $feature-card-padding-h-mob));
+        width: calc(100% - (2 * $feature-card-padding-h-mob) - 2px);
         height: calc(35% - (2 * $feature-card-padding-v-mob));
         padding: $feature-card-padding-v-mob $feature-card-padding-h-mob;
 
@@ -488,6 +539,9 @@ $feature-card-padding-v-mob: 0.8em;
         margin: auto;
 
         letter-spacing: -0.01em;
+
+        border: 1px solid $feature-card-border-color;
+        border-top: none;
       }
     }
 
@@ -514,7 +568,10 @@ $feature-card-padding-v-mob: 0.8em;
             background: url('scratchy-shiny.jpg');
             box-shadow: 
                 0px 0px 14px 9px rgba(0, 0, 0, 0.6);
-        }
+
+            // border: 1px solid #383838;
+            outline: 1px solid rgba(255,255,255,0.2)
+          }
     }
 
     .margined-container {
@@ -642,7 +699,6 @@ $feature-card-padding-v-mob: 0.8em;
     .feature-desc {
       font-size: 1.8em;
       height: fit-content;
-      padding-bottom: 1.2em;
     }
   }
 }

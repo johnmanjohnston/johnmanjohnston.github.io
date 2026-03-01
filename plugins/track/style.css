@@ -249,7 +249,7 @@ html {
 #platforms-wrapper .platform-block .install-texts {
   position: absolute;
   width: 100%;
-  height: 42%;
+  height: 40%;
   bottom: 0;
   text-align: center;
   font-weight: bold;
@@ -264,7 +264,7 @@ html {
 }
 #platforms-wrapper .platform-block .install-texts a {
   background: linear-gradient(to bottom, #818181 0%, #6e6e6e 20%, #535353 55%, #595959 70%, #838383 100%);
-  padding: 0.1em 1.2em;
+  padding: 0.12em 1.5em;
   font-size: 1em;
   opacity: 0.8;
   color: white;
@@ -326,6 +326,9 @@ html {
   .topic {
     font-size: 2.4em;
   }
+  #install-wrapper {
+    font-size: 0.9em;
+  }
 }
 @media only screen and (max-width: 900px) {
   .feature-wrapper {
@@ -357,6 +360,15 @@ html {
   .topic {
     font-size: 1.9em;
   }
+  #platforms-wrapper {
+    width: 36em;
+  }
+  #platforms-wrapper .platform-block {
+    font-size: 0.8em;
+  }
+  #platforms-wrapper .platform-block .install-texts {
+    height: 50%;
+  }
 }
 @media only screen and (max-width: 700px) {
   .container {
@@ -377,6 +389,14 @@ html {
   }
   .feature-wrapper .feature-desc {
     font-size: 1.2em;
+  }
+  #install-wrapper {
+    font-size: 0.7em;
+  }
+  #install-wrapper #platforms-wrapper {
+    font-size: 1.2em;
+    top: 8em;
+    width: 45em;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -480,6 +500,34 @@ html {
   #rod2 {
     margin-top: 1em;
   }
+  #install-wrapper {
+    height: 110em;
+  }
+  #install-wrapper #platforms-wrapper {
+    display: block;
+    height: fit-content;
+    width: 100%;
+  }
+  #install-wrapper #platforms-wrapper .platform-block {
+    display: block;
+    width: 27em;
+    margin: auto;
+    font-size: 1em;
+  }
+  #install-wrapper #platforms-wrapper .platform-block img {
+    height: 20em;
+    margin-top: 1em;
+  }
+  #install-wrapper #platforms-wrapper .platform-block #linux-img {
+    margin-left: 1em;
+    transform: scale(1.1);
+  }
+  #install-wrapper #platforms-wrapper .platform-block .install-texts {
+    width: 50%;
+    top: 2.5em;
+    right: 0;
+    font-size: 1.5em;
+  }
 }
 @media only screen and (max-width: 470px) {
   .rod {
@@ -542,6 +590,9 @@ html {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+  }
+  #install-wrapper {
+    font-size: 0.6em;
   }
 }
 @media only screen and (max-width: 360px) {

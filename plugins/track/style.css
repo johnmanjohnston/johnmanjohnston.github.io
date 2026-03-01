@@ -353,6 +353,9 @@ footer #johnmanjohnston {
   #install-wrapper {
     font-size: 0.9em;
   }
+  #install-wrapper #platforms-wrapper {
+    width: 90%;
+  }
 }
 @media only screen and (max-width: 900px) {
   .feature-wrapper {
@@ -541,7 +544,7 @@ footer #johnmanjohnston {
     margin-top: 1em;
   }
   #install-wrapper {
-    height: 85em;
+    height: 75em;
   }
   #install-wrapper #platforms-wrapper {
     top: 10em;
@@ -553,6 +556,7 @@ footer #johnmanjohnston {
     display: block;
     width: 27em;
     margin: auto;
+    margin-bottom: -3em;
     font-size: 0.9em;
   }
   #install-wrapper #platforms-wrapper .platform-block img {
@@ -634,7 +638,7 @@ footer #johnmanjohnston {
   }
   #install-wrapper {
     font-size: 0.6em;
-    height: 80em;
+    height: 73em;
   }
 }
 @media only screen and (max-width: 360px) {

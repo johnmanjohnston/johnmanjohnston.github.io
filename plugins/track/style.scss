@@ -472,6 +472,10 @@ footer {
 
   #install-wrapper {
       font-size: 0.9em;
+
+      #platforms-wrapper {
+        width: 90%;
+      }
   }
 }
 
@@ -726,7 +730,7 @@ $feature-card-border-color: rgb(50,50,50);
   }
 
 #install-wrapper {
-  height: 85em;
+  height: 75em;
 
   #platforms-wrapper {
     top: 10em;
@@ -738,6 +742,8 @@ $feature-card-border-color: rgb(50,50,50);
       display: block;
       width: 27em;
       margin: auto;
+
+      margin-bottom: -3em;
       
       font-size: 0.9em;
 
@@ -845,7 +851,7 @@ $feature-card-border-color: rgb(50,50,50);
 
   #install-wrapper {
     font-size: 0.6em;
-    height: 80em;
+    height: 73em;
   }
 }
 

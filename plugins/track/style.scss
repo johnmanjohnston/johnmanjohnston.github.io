@@ -291,7 +291,7 @@ html {
 #install-wrapper {
   margin-top: 2em;
   width: 100%;
-  height: 45em;
+  height: 42em;
 
   background: 
               linear-gradient(to bottom, #373737, black);
@@ -352,12 +352,18 @@ html {
         background: linear-gradient(to bottom, #818181 0%, #6e6e6e 20%, #535353 55%, #595959 70%, #838383 100%);
         padding: 0.12em 1.5em;
         font-size: 1em;
-        opacity: 0.8;
+        opacity: 0.7;
         color: white;
         text-decoration: none;
 
+        box-shadow: 0px 0px 8px 1px rgba(255,255,255,0.3);
+        border: 1px solid rgba(255,255,255,0.2);
+
+        transition: 0.1s;
+        
         &:hover {
           opacity: 1;
+          transition: 0.1s;
         }
       }
     }
@@ -406,6 +412,29 @@ $feature-card-width: 49%;
       font-weight: bold;
       text-shadow: 0px 0px 16px rgba(255, 255, 255, 0.3);
     }
+  }
+}
+
+footer {
+  background: linear-gradient(to bottom, #1c1c1c, #4e4e4e);
+  border-top: 1px solid #8d8d8d;
+
+  text-align: center;
+
+  color: grey;
+  padding: 0.8em;
+
+  a {
+    color: grey;
+     
+    &:hover {color:#a7a7a7;}
+  }
+
+  #johnmanjohnston {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2em;
+    text-shadow: 0px 0px 4px rgba(255,255,255,0.2);
   }
 }
 
@@ -494,6 +523,14 @@ $feature-card-width: 49%;
       }
     }
   }
+
+  #install-wrapper {
+    height: 38em;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -519,6 +556,11 @@ $feature-card-width: 49%;
   }
 
   .feature-wrapper {
+    width: 90%;
+
+    margin-left: auto;
+    margin-right: auto;
+    
     .feature-desc {
       font-size: 1.2em;
     }
@@ -526,12 +568,17 @@ $feature-card-width: 49%;
 
   #install-wrapper {
     font-size: 0.7em;
+    height: 34em;
 
     #platforms-wrapper {
       font-size: 1.2em;
       top: 8em;
-      width: 45em;
+      width: 40em;
     }
+  }
+
+  footer {
+    font-size: 0.6em;
   }
 }
 
@@ -543,6 +590,7 @@ $feature-card-border-color: rgb(50,50,50);
 @media only screen and (max-width: 600px) {
     .feature-wrapper {
       height: 20em;
+      width: 100%;
       padding-bottom: 2em;
 
       .feature-img {
@@ -678,9 +726,10 @@ $feature-card-border-color: rgb(50,50,50);
   }
 
 #install-wrapper {
-  height: 110em;
+  height: 85em;
 
   #platforms-wrapper {
+    top: 10em;
     display: block;
     height: fit-content;
     width: 100%;
@@ -690,7 +739,7 @@ $feature-card-border-color: rgb(50,50,50);
       width: 27em;
       margin: auto;
       
-      font-size: 1em;
+      font-size: 0.9em;
 
       img {
         height: 20em;
@@ -792,11 +841,11 @@ $feature-card-border-color: rgb(50,50,50);
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-
   }
 
   #install-wrapper {
     font-size: 0.6em;
+    height: 80em;
   }
 }
 

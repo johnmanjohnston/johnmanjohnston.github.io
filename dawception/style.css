@@ -147,7 +147,7 @@ html {
 }
 
 #this-is-track {
-  font-size: 5.5em;
+  font-size: 3.9em;
   font-weight: 200;
   letter-spacing: -2px;
   z-index: 3;
@@ -452,6 +452,9 @@ footer #johnmanjohnston {
   }
 }
 @media only screen and (max-width: 600px) {
+  #this-is-track {
+    font-size: 3.6em;
+  }
   .feature-wrapper {
     height: 20em;
     width: 100%;

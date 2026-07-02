@@ -895,6 +895,11 @@ $feature-card-border-color: rgb(50,50,50);
 
   .margined-container {
     width: 24em;
+
+    .gallery-notice {
+      $p: 0.9em;
+      padding: calc($p*2) $p $p $p;
+    }
   }
 
   #sp-wrapper {
@@ -935,6 +940,9 @@ $feature-card-border-color: rgb(50,50,50);
 
     .gallery-notice {
       font-size: 0.9em;
+      $p: 0.9em;
+      padding: calc($p/2) $p $p $p;
+      width: 90%;
     }
   }
 

@@ -673,6 +673,9 @@ footer #johnmanjohnston {
   .margined-container {
     width: 24em;
   }
+  .margined-container .gallery-notice {
+    padding: 1.8em 0.9em 0.9em 0.9em;
+  }
   #sp-wrapper {
     margin-top: 12.5em;
   }
@@ -704,6 +707,8 @@ footer #johnmanjohnston {
   }
   .margined-container .gallery-notice {
     font-size: 0.9em;
+    padding: 0.45em 0.9em 0.9em 0.9em;
+    width: 90%;
   }
   #sp-wrapper {
     margin-top: 10.8em;

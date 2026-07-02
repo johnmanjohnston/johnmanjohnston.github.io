@@ -46,6 +46,23 @@ html {
       font-size: 1.3em;
 }
 
+.gallery-notice { 
+  //background: red;
+  text-align: center;
+  color: white;
+  padding: 1.4em;
+  text-shadow: 0px 0px 16px rgba(255,255,255,0.9);
+  font-size: 1em;
+  font-weight: bold;
+  font-style: italic;
+  opacity: 0.7;
+
+  a {
+    color: white;
+    &:hover { opacity: 0.5; }
+  }
+}
+
 #plate {
   width: 100%; 
   transform: scale(1.08);
@@ -289,7 +306,7 @@ html {
 }
 
 #install-wrapper {
-  margin-top: 2em;
+  // margin-top: 2em;
   width: 100%;
   height: 40em;
 
@@ -470,6 +487,11 @@ footer {
 
   .margined-container {
     width: 39em;
+
+    .gallery-notice {
+      font-size: 0.9em;
+      padding: 1.1em;
+    }
   }
 
     #sp-wrapper {
@@ -513,6 +535,11 @@ footer {
 
   .margined-container {
     width: 30em;
+
+    .gallery-notice {
+      font-size: 0.7em;
+      padding: 1em;
+    }
   }
 
   #sp-wrapper {
@@ -677,6 +704,13 @@ $feature-card-border-color: rgb(50,50,50);
 
     .margined-container {
         width: 30em;
+        
+        .gallery-notice {
+          font-size: 1em;
+          width: 70%;
+          margin: auto;
+          padding: 1.4em;
+        }
     }
 
   .hide-for-mobile {
@@ -807,6 +841,12 @@ $feature-card-border-color: rgb(50,50,50);
 
   .margined-container {
     width: 25em;
+
+    .gallery-notice {
+      $p: 0.9em;
+      padding: calc($p/2) $p $p $p;
+      width: 90%;
+    }
   }
 
   #sp-wrapper {
@@ -892,6 +932,10 @@ $feature-card-border-color: rgb(50,50,50);
 
   .margined-container {
     width: 20em;
+
+    .gallery-notice {
+      font-size: 0.9em;
+    }
   }
 
   #sp-wrapper {

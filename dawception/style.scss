@@ -478,6 +478,8 @@ pre {
   margin: 0;
   padding: 0;
   display: inline;
+  word-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 #installation-instructions-wrapper {
@@ -488,8 +490,8 @@ pre {
    overflow: hidden;
 }
 
-.height0 { max-height: 0; transition: 1s; }
-.heightalot { max-height: 1000px; transition: 1s; }
+.height0 { max-height: 0; transition: 0.5s; }
+.heightalot { max-height: 1000px; transition: 0.5s; }
 
 // 1200px, 900px, 570px, 400px
 
@@ -612,7 +614,7 @@ pre {
 
 @media only screen and (max-width: 700px) {
   #installation-instructions-wrapper {
-    font-size: 0.5em;
+    font-size: 0.6em;
 
     > :first-child {
       width: 56em;
@@ -675,8 +677,12 @@ $feature-card-border-color: rgb(50,50,50);
 @media only screen and (max-width: 600px) {
   
   #installation-instructions-wrapper {
-    font-size: 0.67em;
+    font-size: 0.7em;
     #installation-instructions-platform { display: none; }
+
+    > :first-child {
+      width: 45em;
+    }
   }
 
     #this-is-track {
@@ -867,7 +873,12 @@ $feature-card-border-color: rgb(50,50,50);
 }
 
 @media only screen and (max-width: 470px) {
-  #installation-instructions-wrapper { font-size: 0.55em; }
+  #installation-instructions-wrapper { 
+  font-size: 0.8em; 
+  > :first-child {
+      width: 33em;
+    }
+  }
 
   .rod {
     top: 14%;
@@ -931,7 +942,14 @@ $feature-card-border-color: rgb(50,50,50);
 }
 
 @media only screen and (max-width: 400px) {
-  #installation-instructions-wrapper { font-size: 0.45em; }
+  #installation-instructions-wrapper { 
+     //font-size: 0.8em; 
+      font-size: 10px;
+
+      > :first-child {
+        width: 40em;
+      }
+  }
 
   .container {
     font-size: 0.58em;
@@ -975,7 +993,12 @@ $feature-card-border-color: rgb(50,50,50);
 }
 
 @media only screen and (max-width: 360px) {
-  #installation-instructions-wrapper { font-size: 0.44em; }
+  #installation-instructions-wrapper { 
+    font-size: 0.8em; 
+    > :first-child {
+      width: 28em;
+    }
+  }
 
   .container {
     font-size: 0.5em;

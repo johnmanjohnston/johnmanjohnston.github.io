@@ -117,7 +117,7 @@
                     <div class="install-texts">
                         <div class="platform-name">Linux</div>
                         <div class="platform-note">x86_64<br><span class="platform-minimums">mainstream distros</span></div> <br>
-                        <a href="#">Install</a>
+                        <a  onclick="openInstallationInstructions('linux')">Install</a>
                     </div>
                 </div>
                 <div class="platform-block">
@@ -126,7 +126,7 @@
                     <div class="install-texts">
                         <div class="platform-name">Windows</div>
                         <div class="platform-note">64-bit<br /><span class="platform-minimums">Windows 10 or later</span></div> <br>
-                        <a href="#">Install</a>
+                        <a  onclick="openInstallationInstructions('windows')">Install</a>
                     </div>
                 </div>
                 <div class="platform-block">
@@ -135,10 +135,33 @@
                     <div class="install-texts">
                         <div class="platform-name">macOS</div>
                         <div class="platform-note">Universal<br /><span class="platform-minimums">macOS 10.11 or later</span></div> <br>
-                        <a href="#">Install</a>
+                        <a  onclick="openInstallationInstructions('macos')">Install</a>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div id="installation-instructions-wrapper" class="height0">
+            <div class="margined-container" style="background: none; height: 100%; margin: auto; font-size: 1.1em;">
+            <div style="width: 90%; margin: auto; position: relative;">
+                <div style="font-size: 1.1em; text-shadow: 0px 0px 16px rgba(255,255,255,0.5);"><em><b>To complete installation:</b></em></div>
+                <div style="top: 0; right: 0; position: absolute; font-family: monospace;" id="installation-instructions-platform">x86_64-linux</div>
+
+                <ul>
+                    <li>unzip the downloaded file</li>
+                    <li>move DAWception.vst3 to your DAW's VST3 plugin folder</li>
+                </ul>
+      
+                <div id="installation-instructions-platform-specific-instructions">
+                    On Linux, your DAW's VST3 plugin folder is usually located at:
+                    <div><pre>    ~/.vst3/</pre> (user)</div>
+                    <div><pre>        OR</pre></div>
+                    <div><pre>    /usr/lib/vst3/</pre> (global)</div>
+                </div>
+            </div> 
+            </div>
+
+            <br />
         </div>
 
         <footer>
@@ -149,5 +172,6 @@ also 2010s web design is peak we should really bring that back fr</div>
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>AOS.init({ once: true, offset: -9999999 });</script>
+        <script src="index.js"></script>
 </body>
 </html>

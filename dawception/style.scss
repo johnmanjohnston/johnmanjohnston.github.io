@@ -474,9 +474,32 @@ footer {
   }
 }
 
+pre {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+#installation-instructions-wrapper {
+   background: url('noise.png') black; background-repeat: repeat; background-size: auto; 
+   //width: 100%; 
+   color: white; font-size: 1.1em; 
+
+   overflow: hidden;
+}
+
+.height0 { max-height: 0; transition: 1s; }
+.heightalot { max-height: 1000px; transition: 1s; }
+
 // 1200px, 900px, 570px, 400px
 
 @media only screen and (max-width: 1200px) {
+  #installation-instructions-wrapper > :first-child { 
+    width: 80%;
+  }
+  
+
+
   .feature-wrapper {
     font-size: 0.8em;
   }
@@ -521,6 +544,10 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
+  #installation-instructions-wrapper { 
+    font-size: 0.9em;
+  }
+
   .feature-wrapper {
     font-size: 0.63em;
   }
@@ -575,7 +602,7 @@ footer {
   }
 
   #install-wrapper {
-    height: 38em;
+    height: 36em;
   }
 
   footer {
@@ -584,6 +611,14 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
+  #installation-instructions-wrapper {
+    font-size: 0.5em;
+
+    > :first-child {
+      width: 56em;
+    }
+  }
+
   .container {
     font-size: 0.5em;
   }
@@ -618,7 +653,7 @@ footer {
 
   #install-wrapper {
     font-size: 0.7em;
-    height: 34em;
+    height: 33em;
 
     #platforms-wrapper {
       font-size: 1.2em;
@@ -638,6 +673,11 @@ $feature-card-border-color: rgb(50,50,50);
 
 // for smaller screens
 @media only screen and (max-width: 600px) {
+  
+  #installation-instructions-wrapper {
+    font-size: 0.67em;
+    #installation-instructions-platform { display: none; }
+  }
 
     #this-is-track {
       font-size: 3.6em;
@@ -827,6 +867,8 @@ $feature-card-border-color: rgb(50,50,50);
 }
 
 @media only screen and (max-width: 470px) {
+  #installation-instructions-wrapper { font-size: 0.55em; }
+
   .rod {
     top: 14%;
   }
@@ -889,6 +931,8 @@ $feature-card-border-color: rgb(50,50,50);
 }
 
 @media only screen and (max-width: 400px) {
+  #installation-instructions-wrapper { font-size: 0.45em; }
+
   .container {
     font-size: 0.58em;
   }
@@ -931,6 +975,8 @@ $feature-card-border-color: rgb(50,50,50);
 }
 
 @media only screen and (max-width: 360px) {
+  #installation-instructions-wrapper { font-size: 0.44em; }
+
   .container {
     font-size: 0.5em;
   }

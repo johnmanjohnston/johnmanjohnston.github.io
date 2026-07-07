@@ -1,0 +1,35 @@
+function openInstallationInstructions(platform) {
+    var iiWrapper = document.querySelector("#installation-instructions-wrapper");
+    //iiWrapper.classList.remove("height0");
+    iiWrapper.classList.add("heightalot");
+
+    var installationInstructiosnPlatform = document.querySelector("#installation-instructions-platform");
+    if (platform == "linux") installationInstructiosnPlatform.innerText = "x86_64-linux";
+    else if (platform == "windows") installationInstructiosnPlatform.innerText = "win64";
+    else if (platform == "macos") installationInstructiosnPlatform.innerText = "macOS";
+
+    var instructions = document.querySelector("#installation-instructions-platform-specific-instructions")
+    if (platform == "linux") {
+        instructions.innerHTML = `
+                    On Linux, your DAW's VST3 plugin folder is usually located at:
+                    <div><pre>    ~/.vst3/</pre> (user)</div>
+                    <div><pre>        OR</pre></div>
+                    <div><pre>    /usr/lib/vst3/</pre> (global)</div>
+        `;
+    } else if (platform == "windows") {
+        instructions.innerHTML = `
+                    On Windows, your DAW's VST3 plugin folder is usually located at:
+                    <div><pre>    C:\\Program Files\\Common Files\\VST3\\</pre></div>
+        `;
+    } else if (platform == "macos") {
+        instructions.innerHTML = `
+                    On macOS, your DAW's VST3 plugin folder is usually located at:
+                    <div><pre>    /Library/Audio/Plug-Ins/VST3/</pre></div>
+                    <br>
+                    after dragging DAWception to your VST3 folder, open the Terminal app and run: <br>
+                    <pre>sudo xattr -dr com.apple.quarantine /Library/Audio/Plug-Ins/VST3/DAWception.vst3</pre>
+        `;
+    }
+}
+
+// openInstallationInstructions("macos")

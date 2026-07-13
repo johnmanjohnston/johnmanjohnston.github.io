@@ -30,6 +30,14 @@ function openInstallationInstructions(platform) {
                     <pre>sudo xattr -dr com.apple.quarantine /Library/Audio/Plug-Ins/VST3/DAWception.vst3</pre>
         `;
     }
+
+    setTimeout(() => {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            left: 0,
+            behavior: "smooth"
+        });
+    }, 80);
 }
 
 // openInstallationInstructions("macos")

@@ -8,13 +8,12 @@ html {
 }
 
 #bg {
-  background-color: #3d3d3d;
-  background-image: url("carbon-fibre-big.png");
+  background-image: url("mysquare.png");
   width: 100%;
   height: 100%;
   position: fixed;
   background-repeat: repeat;
-  background-size: 20px;
+  background-size: 32px;
   z-index: -5;
 }
 
@@ -316,7 +315,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.8);
 }
 .feature-wrapper .feature-desc {
   width: calc(49% - 2em);

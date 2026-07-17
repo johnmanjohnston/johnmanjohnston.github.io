@@ -175,30 +175,29 @@ html {
 }
 
 .bg-sep-orb {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  transform: scale(3.5, 1.9) translate(-6px, 20px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 
-  background: radial-gradient(
-    circle at center,
-    rgba(255, 255, 255, 0.2) 0,
-    rgba(0, 0, 0, 0) 40%,
-    rgba(0, 0, 0, 0) 100%
-  );
+    width: 100%;
+    height: 100%;
+
+    transform: scale(3.5, 1.9) translate(0, 20px);
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%);
+
 }
 
-.show-only-on-small-screens { display: none; }
+  .show-only-on-small-screens { display: none; }
 
-.linear-gradient {
-  background: linear-gradient(
-    to bottom,
-    #141414 0%,
-    rgba(0, 0, 0, 0.2) 40%,
-    rgba(0, 0, 0, 0) 100%
-  );
-}
+  .linear-gradient {
+    background: linear-gradient(
+      to bottom,
+      #141414 0%,
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
 
 .container {
   // debug
@@ -221,7 +220,7 @@ html {
   border: 1px solid grey;
 
   &:hover {
-    box-shadow: $normal-shadow, 0px 0px 32px 16px rgba(64, 100, 142, 1);
+    box-shadow: $normal-shadow, 0px 0px 40px 20px rgba(64, 100, 142, 1);
   }
 
   // display: none;
@@ -246,6 +245,7 @@ html {
   }
 }
 
+$hero-font-glow: 0px 0px 4px black, 0px 0px 6px white;
 #this-is-track {
   font-size: 3.8em;
   font-weight: 200;
@@ -257,6 +257,7 @@ html {
   white-space: nowrap;
 
   color: white;
+  text-shadow: $hero-font-glow;
   span {
     font-weight: bold;
     font-style: italic;
@@ -277,7 +278,7 @@ html {
   font-size: 2.3em;
   width: 80%;
 
-  text-shadow: 0px 0px 4px black, 0px 0px 4px white;
+  text-shadow: $hero-font-glow;
 }
 
 #sp-wrapper {
@@ -821,17 +822,6 @@ $feature-card-border-color: rgb(50,50,50);
       font-size: 2.7em;
       margin: auto;
     }
-  }
-
-  .bg-sep-orb {
-    background: radial-gradient(
-      circle at center,
-      rgba(0, 0, 0, 0.3) 0,
-      rgba(0, 0, 0, 0) 30%,
-      rgba(0, 0, 0, 0) 100%
-    );
-
-    transform: scale(12, 4) translate(-5px, 0px);
   }
 
   #pc-img {

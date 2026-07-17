@@ -50,17 +50,28 @@ html {
 .gallery-notice { 
   //background: red;
   text-align: center;
-  color: white;
-  padding: 1.4em;
-  text-shadow: 0px 0px 16px rgba(255,255,255,0.9);
+  padding: 0.5em;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0px 0px 16px 4px black;
+  text-shadow: 0px 0px 16px rgba(255,255,255,0.6);
   font-size: 1em;
   font-weight: bold;
   font-style: italic;
-  opacity: 0.7;
+  opacity: 1;
+
+  border: 1px solid #404040;
+  border-bottom: none;
+  margin-top: 1em;
+  
+  background: #232323;
+  background-image: url('scratchy-shiny.jpg');
+  color: #C0C0C0;
+
+  
 
   a {
-    color: white;
-    &:hover { opacity: 0.5; }
+    color: #C0C0C0;
+    &:hover { color: white; text-shadow: 0px 0px 16px white; }
   }
 }
 
@@ -186,9 +197,9 @@ html {
 
 .container {
   // debug
-  // background: red;
   margin: auto;
   display: flex;
+  flex-direction: column;
   position: relative;
   width: 69em;
 
@@ -196,9 +207,19 @@ html {
 }
 
 #pc-img {
-  width: 50%;
-  position: relative;
-  transform: scale(0.97);
+  width: 92.3%;
+  height: 100%;
+  margin: 2em auto;
+
+  $normal-shadow:  0px 0px 16px 2px white;
+  box-shadow: $normal-shadow;
+  border: 1px solid grey;
+
+  &:hover {
+    box-shadow: $normal-shadow, 0px 0px 32px 16px rgba(64, 100, 142, 1);
+  }
+
+  // display: none;
 }
 
 .opener-section {
@@ -206,17 +227,18 @@ html {
 }
 
 #opener-texts-wrapper {
-  // debug
+  text-align: center;
+
   // background: blue;
-  width: 50%;
+  width: 100%;
 
   color: white;
 
-  align-self: center;
-  margin-bottom: 4em;
-
-  position: relative;
-  padding: 2em;
+  #slogan {
+    width: 10em;
+    font-size: 2.7em;
+    margin: auto;
+  }
 }
 
 #this-is-track {
@@ -517,7 +539,6 @@ pre {
 
     .gallery-notice {
       font-size: 0.9em;
-      padding: 1.1em;
     }
   }
 
@@ -569,7 +590,6 @@ pre {
 
     .gallery-notice {
       font-size: 0.7em;
-      padding: 1em;
     }
   }
 
@@ -708,7 +728,8 @@ $feature-card-border-color: rgb(50,50,50);
       .feature-desc {
         font-size: 1.9em;
         width: calc(100% - (2 * $feature-card-padding-h-mob) - 2px);
-        height: calc(35% - (2 * $feature-card-padding-v-mob));
+        //height: calc(35% - (2 * $feature-card-padding-v-mob));
+        height: fit-content; 
         padding: $feature-card-padding-v-mob $feature-card-padding-h-mob;
 
         float: left;
@@ -754,10 +775,10 @@ $feature-card-border-color: rgb(50,50,50);
         width: 30em;
         
         .gallery-notice {
+          margin-left: auto;
+          margin-right: auto;
           font-size: 1em;
-          width: 70%;
-          margin: auto;
-          padding: 1.4em;
+          margin-top: 4em;
         }
     }
 
@@ -784,7 +805,7 @@ $feature-card-border-color: rgb(50,50,50);
 
     position: absolute;
     width: 80%;
-    top: calc(30em + 0px);
+    top: calc(24em - 4px);
     left: 50%;
     transform: translateX(-50%);
     // margin: 0em 0 -10em 0em;
@@ -896,12 +917,6 @@ $feature-card-border-color: rgb(50,50,50);
 
   .margined-container {
     width: 25em;
-
-    .gallery-notice {
-      $p: 0.9em;
-      padding: calc($p/2) $p $p $p;
-      width: 90%;
-    }
   }
 
   #sp-wrapper {
@@ -941,6 +956,16 @@ $feature-card-border-color: rgb(50,50,50);
       background-color: #2E2E2E;
     }
   }
+
+
+  #opener-texts-wrapper {
+    top: calc(20.5em + 12px);
+  }
+
+  #pc-img {
+    margin: auto;
+    width: 34em;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -961,8 +986,7 @@ $feature-card-border-color: rgb(50,50,50);
     width: 24em;
 
     .gallery-notice {
-      $p: 0.9em;
-      padding: calc($p*2) $p $p $p;
+      width: 90%;
     }
   }
 
@@ -1010,10 +1034,7 @@ $feature-card-border-color: rgb(50,50,50);
     width: 20em;
 
     .gallery-notice {
-      font-size: 0.9em;
-      $p: 0.9em;
-      padding: calc($p/2) $p $p $p;
-      width: 90%;
+      font-size: 0.8em;
     }
   }
 

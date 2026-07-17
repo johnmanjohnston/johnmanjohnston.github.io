@@ -25,19 +25,27 @@ html {
 
 .gallery-notice {
   text-align: center;
-  color: white;
-  padding: 1.4em;
-  text-shadow: 0px 0px 16px rgba(255, 255, 255, 0.9);
+  padding: 0.5em;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0px 0px 16px 4px black;
+  text-shadow: 0px 0px 16px rgba(255, 255, 255, 0.6);
   font-size: 1em;
   font-weight: bold;
   font-style: italic;
-  opacity: 0.7;
+  opacity: 1;
+  border: 1px solid #404040;
+  border-bottom: none;
+  margin-top: 1em;
+  background: #232323;
+  background-image: url("scratchy-shiny.jpg");
+  color: #C0C0C0;
 }
 .gallery-notice a {
-  color: white;
+  color: #C0C0C0;
 }
 .gallery-notice a:hover {
-  opacity: 0.5;
+  color: white;
+  text-shadow: 0px 0px 16px white;
 }
 
 #plate {
@@ -138,15 +146,21 @@ html {
 .container {
   margin: auto;
   display: flex;
+  flex-direction: column;
   position: relative;
   width: 69em;
   overflow: visible;
 }
 
 #pc-img {
-  width: 50%;
-  position: relative;
-  transform: scale(0.97);
+  width: 92.3%;
+  height: 100%;
+  margin: 2em auto;
+  box-shadow: 0px 0px 16px 2px white;
+  border: 1px solid grey;
+}
+#pc-img:hover {
+  box-shadow: 0px 0px 16px 2px white, 0px 0px 32px 16px rgb(64, 100, 142);
 }
 
 .opener-section {
@@ -154,12 +168,14 @@ html {
 }
 
 #opener-texts-wrapper {
-  width: 50%;
+  text-align: center;
+  width: 100%;
   color: white;
-  align-self: center;
-  margin-bottom: 4em;
-  position: relative;
-  padding: 2em;
+}
+#opener-texts-wrapper #slogan {
+  width: 10em;
+  font-size: 2.7em;
+  margin: auto;
 }
 
 #this-is-track {
@@ -397,7 +413,6 @@ pre {
   }
   .margined-container .gallery-notice {
     font-size: 0.9em;
-    padding: 1.1em;
   }
   #sp-wrapper {
     gap: 20px;
@@ -437,7 +452,6 @@ pre {
   }
   .margined-container .gallery-notice {
     font-size: 0.7em;
-    padding: 1em;
   }
   #sp-wrapper {
     gap: 18px;
@@ -544,7 +558,7 @@ pre {
   .feature-wrapper .feature-desc {
     font-size: 1.9em;
     width: calc(100% - 1.4em - 2px);
-    height: calc(35% - 1.2em);
+    height: fit-content;
     padding: 0.6em 0.7em;
     float: left;
     margin: auto;
@@ -578,10 +592,10 @@ pre {
     width: 30em;
   }
   .margined-container .gallery-notice {
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1em;
-    width: 70%;
-    margin: auto;
-    padding: 1.4em;
+    margin-top: 4em;
   }
   .hide-for-mobile {
     display: none;
@@ -601,7 +615,7 @@ pre {
     text-align: center;
     position: absolute;
     width: 80%;
-    top: calc(30em + 0px);
+    top: calc(24em - 4px);
     left: 50%;
     transform: translateX(-50%);
     margin: auto;
@@ -686,10 +700,6 @@ pre {
   .margined-container {
     width: 25em;
   }
-  .margined-container .gallery-notice {
-    padding: 0.45em 0.9em 0.9em 0.9em;
-    width: 90%;
-  }
   #sp-wrapper {
     width: 90%;
     margin-top: 13.4em;
@@ -718,6 +728,13 @@ pre {
     background-size: 110%;
     background-color: #2E2E2E;
   }
+  #opener-texts-wrapper {
+    top: calc(20.5em + 12px);
+  }
+  #pc-img {
+    margin: auto;
+    width: 34em;
+  }
 }
 @media only screen and (max-width: 400px) {
   #installation-instructions-wrapper {
@@ -733,7 +750,7 @@ pre {
     width: 24em;
   }
   .margined-container .gallery-notice {
-    padding: 1.8em 0.9em 0.9em 0.9em;
+    width: 90%;
   }
   #sp-wrapper {
     margin-top: 12.5em;
@@ -771,9 +788,7 @@ pre {
     width: 20em;
   }
   .margined-container .gallery-notice {
-    font-size: 0.9em;
-    padding: 0.45em 0.9em 0.9em 0.9em;
-    width: 90%;
+    font-size: 0.8em;
   }
   #sp-wrapper {
     margin-top: 10.8em;

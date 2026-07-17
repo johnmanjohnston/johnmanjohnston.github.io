@@ -1066,5 +1066,5 @@ $feature-card-border-color: rgb(50,50,50);
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  body { -webkit-text-size-adjust: none; }
+  body { -webkit-text-size-adjust: 100%; }
 }

@@ -46,6 +46,8 @@ html {
       width: 49em;
       margin: auto;
       font-size: 1.3em;
+
+      position: relative;
 }
 
 .gallery-notice { 
@@ -172,17 +174,17 @@ html {
   }
 }
 
-#bg-sep-orb {
+.bg-sep-orb {
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: -1;
-  transform: scale(12, 4) translate(-5px, 7px);
+  transform: scale(3.5, 1.9) translate(-6px, 20px);
 
   background: radial-gradient(
     circle at center,
-    rgba(0, 0, 0, 0.4) 0,
-    rgba(0, 0, 0, 0) 30%,
+    rgba(255, 255, 255, 0.2) 0,
+    rgba(0, 0, 0, 0) 40%,
     rgba(0, 0, 0, 0) 100%
   );
 }
@@ -192,7 +194,7 @@ html {
 .linear-gradient {
   background: linear-gradient(
     to bottom,
-    #222 0%,
+    #141414 0%,
     rgba(0, 0, 0, 0.2) 40%,
     rgba(0, 0, 0, 0) 100%
   );
@@ -821,7 +823,7 @@ $feature-card-border-color: rgb(50,50,50);
     }
   }
 
-  #bg-sep-orb {
+  .bg-sep-orb {
     background: radial-gradient(
       circle at center,
       rgba(0, 0, 0, 0.3) 0,

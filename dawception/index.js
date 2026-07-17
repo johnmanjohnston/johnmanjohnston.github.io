@@ -40,4 +40,16 @@ function openInstallationInstructions(platform) {
     }, 80);
 }
 
+var dialogImg = document.querySelector("#pc-img");
+var dialogEl = document.querySelector("#img-dialog");
+var dialogCloseBtn = document.querySelector("#img-dialog-close");
+
+dialogImg.onclick = (ev) => {
+    dialogEl.showModal();
+};
+
+dialogCloseBtn.onclick = (ev) => {
+    dialogEl.close();
+}
+
 // openInstallationInstructions("macos")

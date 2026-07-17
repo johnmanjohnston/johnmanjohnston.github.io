@@ -162,9 +162,73 @@ html {
   margin: 3em auto;
   box-shadow: 0px 0px 16px 2px white;
   border: 1px solid grey;
+  transition: 0.2s;
 }
 #pc-img:hover {
   box-shadow: 0px 0px 16px 2px white, 0px 0px 40px 20px rgb(64, 100, 142);
+  cursor: zoom-in;
+  transition: 0.2s;
+}
+
+#img-dialog {
+  width: 90%;
+  background: linear-gradient(to bottom, #121212 0%, #020202 100%);
+  outline: 1px solid grey;
+}
+#img-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+#img-dialog img {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#img-dialog #img-dialog-info-wrapper {
+  text-align: center;
+  margin: auto;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  background: linear-gradient(0deg, #000000 0%, #333 70%, #343434 70%, #444 100%);
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2em 0;
+  border-bottom: 1px solid grey;
+  font-size: 1em;
+}
+#img-dialog #img-dialog-info-wrapper div {
+  margin-left: 0.3em;
+  font-weight: bold;
+  text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.8);
+}
+#img-dialog #img-dialog-info-wrapper button {
+  margin-right: 0.3em;
+  font-weight: bold;
+  font-style: italic;
+  outline: none;
+  border: none;
+  font-family: "Inter Tight", "Inter", "Helvetica", sans-serif;
+  padding: 0.1em 1.2em;
+  background: linear-gradient(to bottom, #818181 0%, #6e6e6e 20%, #535353 55%, #595959 70%, #838383 100%);
+  color: white;
+  text-decoration: none;
+  box-shadow: 0px 0px 8px 1px rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1em;
+  text-shadow: 0px 0px 12px white;
+  transition: 0.15s;
+}
+#img-dialog #img-dialog-info-wrapper button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 0.15s;
 }
 
 .opener-section {
@@ -407,6 +471,9 @@ pre {
   #installation-instructions-wrapper > :first-child {
     width: 80%;
   }
+  #img-dialog #img-dialog-info-wrapper {
+    font-size: 0.6em;
+  }
   .feature-wrapper {
     font-size: 0.8em;
   }
@@ -536,6 +603,9 @@ pre {
   }
 }
 @media only screen and (max-width: 600px) {
+  #img-dialog #img-dialog-info-wrapper {
+    font-size: 0.6em;
+  }
   #installation-instructions-wrapper {
     font-size: 0.7em;
   }
@@ -683,6 +753,9 @@ pre {
   }
 }
 @media only screen and (max-width: 470px) {
+  #img-dialog #img-dialog-info-wrapper {
+    font-size: 0.4em;
+  }
   #installation-instructions-wrapper {
     font-size: 0.8em;
   }

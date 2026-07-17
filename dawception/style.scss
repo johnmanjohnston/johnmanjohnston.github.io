@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+
+$fonts: "Inter Tight", "Inter", "Helvetica", sans-serif;
 body,
 html {
   padding: 0;
   margin: 0;
 
-  font-family: "Inter Tight", "Inter", "Helvetica", sans-serif;
+  font-family: $fonts;
 
   overflow-x: clip;
 }
@@ -221,9 +223,89 @@ html {
 
   &:hover {
     box-shadow: $normal-shadow, 0px 0px 40px 20px rgba(64, 100, 142, 1);
+    cursor: zoom-in;
+    transition: 0.2s;
   }
 
+  transition: 0.2s;
+
   // display: none;
+}
+
+#img-dialog {
+  &::backdrop {
+    background: rgba(0,0,0,0.5);
+  }
+
+  width: 90%;
+
+  img {
+    width: 100%;
+    margin: auto; position: relative; left: 50%; transform: translateX(-50%);
+  }
+
+  #img-dialog-info-wrapper {
+    text-align: center;
+    margin: auto;
+    color: white;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    background: linear-gradient(0deg, #000000 0%, #333 70%, #343434 70%, #444 100%);
+    height: fit-content;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0.2em 0;
+
+    border-bottom: 1px solid grey;
+
+    font-size: 1em;
+
+    $side-margin: 0.3em;
+    div {
+      margin-left: $side-margin;
+      font-weight: bold;
+      text-shadow: 0px 0px 12px rgba(255,255,255, 0.8);
+    }
+
+    button {
+      margin-right: $side-margin;
+
+      font-weight: bold;
+      font-style: italic;
+
+      outline: none;
+      border: none;
+      font-family: $fonts;
+
+      padding: 0.1em 1.2em;
+      background: linear-gradient(to bottom, #818181 0%, #6e6e6e 20%, #535353 55%, #595959 70%, #838383 100%);
+      color: white;
+      text-decoration: none;
+      box-shadow: 0px 0px 8px 1px rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+
+      font-size: 1em;
+      text-shadow: 0px 0px 12px white;
+
+
+      &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+        transition: 0.15s;
+      }
+      transition: 0.15s;
+    }
+  }
+
+  background: linear-gradient(to bottom, #121212 0%, #020202 100%);
+  outline: 1px solid grey;
 }
 
 .opener-section {
@@ -531,6 +613,7 @@ pre {
   }
   
 
+  #img-dialog  #img-dialog-info-wrapper { font-size: 0.6em; } 
 
   .feature-wrapper {
     font-size: 0.8em;
@@ -703,7 +786,9 @@ $feature-card-border-color: rgb(50,50,50);
 
 // for smaller screens
 @media only screen and (max-width: 600px) {
-  
+  #img-dialog  #img-dialog-info-wrapper { font-size: 0.6em; } 
+
+
   #installation-instructions-wrapper {
     font-size: 0.7em;
     #installation-instructions-platform { display: none; }
@@ -891,6 +976,8 @@ $feature-card-border-color: rgb(50,50,50);
 }
 
 @media only screen and (max-width: 470px) {
+  #img-dialog  #img-dialog-info-wrapper { font-size: 0.4em; } 
+
   #installation-instructions-wrapper { 
   font-size: 0.8em; 
   > :first-child {

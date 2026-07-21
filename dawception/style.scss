@@ -187,7 +187,6 @@ html {
 
     transform: scale(3.5, 2.4) translate(0, 30px);
     background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 0, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%);
-
 }
 
   .show-only-on-small-screens { display: none; }
@@ -977,6 +976,10 @@ $feature-card-border-color: rgb(50,50,50);
 
 @media only screen and (max-width: 470px) {
   #img-dialog  #img-dialog-info-wrapper { font-size: 0.4em; } 
+
+  .bg-sep-orb {
+    transform: scale(3.5, 1.4) translate(0, 30px);
+  }
 
   #installation-instructions-wrapper { 
   font-size: 0.8em; 

@@ -755,6 +755,9 @@ pre {
   #img-dialog #img-dialog-info-wrapper {
     font-size: 0.4em;
   }
+  .bg-sep-orb {
+    transform: scale(3.5, 1.4) translate(0, 30px);
+  }
   #installation-instructions-wrapper {
     font-size: 0.8em;
   }

@@ -25,9 +25,15 @@ function openInstallationInstructions(platform) {
         instructions.innerHTML = `
                     On macOS, your DAW's VST3 plugin folder is usually located at:
                     <div><pre>    /Library/Audio/Plug-Ins/VST3/</pre></div>
-                    <br>
-                    after dragging DAWception to your VST3 folder, open the Terminal app and run: <br>
+                    <ul>
+                        <li>open the Terminal app and run these commands (adjust path if needed):</li>
                     <pre>sudo xattr -dr com.apple.quarantine /Library/Audio/Plug-Ins/VST3/DAWception.vst3</pre>
+                        <br>
+                        and
+                        <br>
+                    <pre>codesign --deep --force --sign - /Library/Audio/Plug-Ins/VST3/DAWception.vst3</pre>
+
+                    </ul>
         `;
     }
 
@@ -37,7 +43,7 @@ function openInstallationInstructions(platform) {
             left: 0,
             behavior: "smooth"
         });
-    }, 80);
+    }, 100);
 }
 
 /*

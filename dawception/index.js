@@ -27,11 +27,11 @@ function openInstallationInstructions(platform) {
                     <div><pre>    /Library/Audio/Plug-Ins/VST3/</pre></div>
                     <ul>
                         <li>open the Terminal app and run these commands (adjust path if needed):</li>
-                    <pre>sudo xattr -dr com.apple.quarantine /Library/Audio/Plug-Ins/VST3/DAWception.vst3</pre>
+                    <pre class="macos-pre">sudo xattr -dr com.apple.quarantine /Library/Audio/Plug-Ins/VST3/DAWception.vst3</pre>
                         <br>
                         and
                         <br>
-                    <pre>codesign --deep --force --sign - /Library/Audio/Plug-Ins/VST3/DAWception.vst3</pre>
+                    <pre class="macos-pre">sudo codesign --deep --force --sign - /Library/Audio/Plug-Ins/VST3/DAWception.vst3</pre>
 
                     </ul>
         `;

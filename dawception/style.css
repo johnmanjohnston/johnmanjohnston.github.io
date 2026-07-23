@@ -466,6 +466,11 @@ pre {
   transition: 0.5s;
 }
 
+.macos-pre {
+  color: #0dff4d;
+  text-shadow: 0px 0px 16px #70ff96, 0px 0px 4px rgba(255, 255, 255, 0.4);
+}
+
 @media only screen and (max-width: 1200px) {
   #installation-instructions-wrapper > :first-child {
     width: 80%;

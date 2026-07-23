@@ -27,11 +27,17 @@ function openInstallationInstructions(platform) {
                     <div><pre>    /Library/Audio/Plug-Ins/VST3/</pre></div>
                     <ul>
                         <li>open the Terminal app and run these commands (adjust path if needed):</li>
-                    <pre class="macos-pre">sudo xattr -dr com.apple.quarantine /Library/Audio/Plug-Ins/VST3/DAWception.vst3</pre>
-                        <br>
-                        and
-                        <br>
-                    <pre class="macos-pre">sudo codesign --deep --force --sign - /Library/Audio/Plug-Ins/VST3/DAWception.vst3</pre>
+                        <div class="macos-command-wrapper">
+                    <pre class="macos-pre" id="command1">sudo xattr -dr com.apple.quarantine /Library/Audio/Plug-Ins/VST3/DAWception.vst3</pre>
+                    <button onclick="copyInstallCommand('command1', this)">copy</button>
+                        </div>
+
+                        then
+
+                        <div class="macos-command-wrapper">
+                    <pre class="macos-pre" id="command2">sudo codesign --deep --force --sign - /Library/Audio/Plug-Ins/VST3/DAWception.vst3</pre>
+                    <button onclick="copyInstallCommand('command2', this)">copy</button>
+                        </div>
 
                     </ul>
         `;
@@ -44,6 +50,18 @@ function openInstallationInstructions(platform) {
             behavior: "smooth"
         });
     }, 100);
+}
+
+function copyInstallCommand(commandElId, btn) {
+    var cmd = document.getElementById(commandElId).innerText;
+
+    navigator.clipboard.writeText(cmd).catch((ex) => { alert('failed'); console.log(ex); }).then((ev) => { console.log(ev); });
+
+    btn.innerText = "copied";
+    setTimeout(() => {
+        btn.innerText = "copy";
+    }, 1200);
+
 }
 
 /*

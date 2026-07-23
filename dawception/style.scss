@@ -604,9 +604,43 @@ pre {
 .height0 { max-height: 0; transition: 0.5s; }
 .heightalot { max-height: 1000px; transition: 0.5s; }
 
-.macos-pre {
-  color: #0dff4d;
-  text-shadow: 0px 0px 16px #70ff96, 0px 0px 4px rgba(255,255,255,0.4);
+.macos-command-wrapper {
+  background: black;
+  padding: 0.2em 0.3em;
+  height: 100%;
+  outline: 1px solid rgba(255,255,255,0.2);
+
+  margin: 0.5em 0;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  font-size: 1em;
+
+  .macos-pre {
+    color: #0dff4d;
+    text-shadow: 0px 0px 16px #70ff96, 0px 0px 4px rgba(255,255,255,0.4);
+    width: 90%;
+  }
+
+  button {
+    background: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: monospace, sans-serif;
+    font-size: 0.8em;
+
+    position: absolute;
+    top: 50%;
+    right: 0.2em;
+    transform: translateY(-50%);
+
+    opacity: 0.4;
+    &:hover { opacity: 0.6; }
+  } 
 }
 
 // 1200px, 900px, 570px, 400px
@@ -791,7 +825,6 @@ $feature-card-border-color: rgb(50,50,50);
 // for smaller screens
 @media only screen and (max-width: 600px) {
   #img-dialog  #img-dialog-info-wrapper { font-size: 0.6em; } 
-
 
   #installation-instructions-wrapper {
     font-size: 0.7em;

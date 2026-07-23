@@ -11,19 +11,19 @@ function openInstallationInstructions(platform) {
     var instructions = document.querySelector("#installation-instructions-platform-specific-instructions")
     if (platform == "linux") {
         instructions.innerHTML = `
-                    On Linux, your DAW's VST3 plugin folder is usually located at:
+                    standard VST3 path for Linux:
                     <div><pre>    ~/.vst3/</pre> (user)</div>
                     <div><pre>        OR</pre></div>
                     <div><pre>    /usr/lib/vst3/</pre> (global)</div>
         `;
     } else if (platform == "windows") {
         instructions.innerHTML = `
-                    On Windows, your DAW's VST3 plugin folder is usually located at:
+                    standard VST3 path for Windows:
                     <div><pre>    C:\\Program Files\\Common Files\\VST3\\</pre></div>
         `;
     } else if (platform == "macos") {
         instructions.innerHTML = `
-                    On macOS, your DAW's VST3 plugin folder is usually located at:
+                    standard VST3 path for macOS:
                     <div><pre>    /Library/Audio/Plug-Ins/VST3/</pre></div>
                     <ul>
                         <li>open the Terminal app and run these commands (adjust path if needed):</li>

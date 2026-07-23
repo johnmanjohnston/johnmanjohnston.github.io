@@ -763,7 +763,7 @@ pre {
 
 @media only screen and (max-width: 700px) {
   #installation-instructions-wrapper {
-    font-size: 0.6em;
+    font-size: 0.7em;
 
     > :first-child {
       width: 56em;
@@ -827,11 +827,11 @@ $feature-card-border-color: rgb(50,50,50);
   #img-dialog  #img-dialog-info-wrapper { font-size: 0.6em; } 
 
   #installation-instructions-wrapper {
-    font-size: 0.7em;
+    font-size: 1em;
     #installation-instructions-platform { display: none; }
 
     > :first-child {
-      width: 45em;
+      width: 30em;
     }
   }
 
@@ -1020,10 +1020,7 @@ $feature-card-border-color: rgb(50,50,50);
   }
 
   #installation-instructions-wrapper { 
-  font-size: 0.8em; 
-  > :first-child {
-      width: 33em;
-    }
+    font-size: 0.9em; 
   }
 
   .rod {
@@ -1093,11 +1090,10 @@ $feature-card-border-color: rgb(50,50,50);
 
 @media only screen and (max-width: 400px) {
   #installation-instructions-wrapper { 
-     //font-size: 0.8em; 
-      font-size: 10px;
+     font-size: 0.8em; 
 
       > :first-child {
-        width: 40em;
+        width: 29em;
       }
   }
 

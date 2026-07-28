@@ -25,7 +25,7 @@ html {
 
   background-repeat: repeat;
   // background-size: 32px;
-  background-size: 0.9em;
+  background-size: 1em;
 
   // background-size: 1.2em;
 
@@ -186,7 +186,7 @@ html {
     height: 100%;
 
     transform: scale(3.5, 2.4) translate(0, 30px);
-    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%);
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.25) 0, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%);
 }
 
   .show-only-on-small-screens { display: none; }
